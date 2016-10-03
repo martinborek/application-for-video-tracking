@@ -1,1 +1,2 @@
-doc_doxygen/(html|latex)/* linguist-vendored
+doc_doxygen/latex/* linguist-vendored
+doc_doxygen/html/* linguist-vendored
