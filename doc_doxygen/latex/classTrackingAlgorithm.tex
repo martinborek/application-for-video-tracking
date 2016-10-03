@@ -1,0 +1,82 @@
+\hypertarget{classTrackingAlgorithm}{}\section{Tracking\+Algorithm Class Reference}
+\label{classTrackingAlgorithm}\index{Tracking\+Algorithm@{Tracking\+Algorithm}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTrackingAlgorithm_aacf4a2ab0938a3147019fa8bf8a113e0}{Tracking\+Algorithm} (cv\+::\+Mat const \&initial\+Frame, \hyperlink{structSelection}{Selection} const \&initial\+Position, \hyperlink{structSelection}{Selection} \&centerized\+Position)
+\item 
+\hyperlink{classTrackingAlgorithm_a6838f39b3c3d4589937ec93187bf8269}{$\sim$\+Tracking\+Algorithm} ()
+\item 
+\hyperlink{structSelection}{Selection} \hyperlink{classTrackingAlgorithm_a8265a50f6772749471c96635deb19e07}{track\+\_\+next\+\_\+frame} (cv\+::\+Mat const \&next\+Image)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file trackingalgorithm.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTrackingAlgorithm_aacf4a2ab0938a3147019fa8bf8a113e0}{}\index{Tracking\+Algorithm@{Tracking\+Algorithm}!Tracking\+Algorithm@{Tracking\+Algorithm}}
+\index{Tracking\+Algorithm@{Tracking\+Algorithm}!Tracking\+Algorithm@{Tracking\+Algorithm}}
+\subsubsection[{Tracking\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}Tracking\+Algorithm\+::\+Tracking\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat const \&}]{initial\+Frame, }
+\item[{{\bf Selection} const \&}]{initial\+Position, }
+\item[{{\bf Selection} \&}]{centerized\+Position}
+\end{DoxyParamCaption}
+)}\label{classTrackingAlgorithm_aacf4a2ab0938a3147019fa8bf8a113e0}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em initial\+Frame} & Data of the first frame \\
+\hline
+{\em initial\+Position} & Position of the object in the first frame \\
+\hline
+{\em centerized\+Position} & Returned position of the object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file trackingalgorithm.\+cpp.
+
+\hypertarget{classTrackingAlgorithm_a6838f39b3c3d4589937ec93187bf8269}{}\index{Tracking\+Algorithm@{Tracking\+Algorithm}!````~Tracking\+Algorithm@{$\sim$\+Tracking\+Algorithm}}
+\index{````~Tracking\+Algorithm@{$\sim$\+Tracking\+Algorithm}!Tracking\+Algorithm@{Tracking\+Algorithm}}
+\subsubsection[{$\sim$\+Tracking\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}Tracking\+Algorithm\+::$\sim$\+Tracking\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrackingAlgorithm_a6838f39b3c3d4589937ec93187bf8269}
+Destructor 
+
+Definition at line 87 of file trackingalgorithm.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTrackingAlgorithm_a8265a50f6772749471c96635deb19e07}{}\index{Tracking\+Algorithm@{Tracking\+Algorithm}!track\+\_\+next\+\_\+frame@{track\+\_\+next\+\_\+frame}}
+\index{track\+\_\+next\+\_\+frame@{track\+\_\+next\+\_\+frame}!Tracking\+Algorithm@{Tracking\+Algorithm}}
+\subsubsection[{track\+\_\+next\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Tracking\+Algorithm\+::track\+\_\+next\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat const \&}]{next\+Image}
+\end{DoxyParamCaption}
+)}\label{classTrackingAlgorithm_a8265a50f6772749471c96635deb19e07}
+Tracks the next provided frame. 
+\begin{DoxyParams}{Parameters}
+{\em next\+Image} & The next image for tracking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the object 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file trackingalgorithm.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{trackingalgorithm_8h}{trackingalgorithm.\+h}\item 
+sources/\hyperlink{trackingalgorithm_8cpp}{trackingalgorithm.\+cpp}\end{DoxyCompactItemize}

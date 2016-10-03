@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/language">
+        <file>video_anonymizer_cs.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,142 @@
+\hypertarget{classAVWriter}{}\section{A\+V\+Writer Class Reference}
+\label{classAVWriter}\index{A\+V\+Writer@{A\+V\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAVWriter_a07d7498d6d2dda57dd1d61432f09067c}{initialize\+\_\+output} (std\+::string filename, A\+V\+Stream const $\ast$in\+Video\+Stream, A\+V\+Stream const $\ast$in\+Audio\+Stream, char const $\ast$in\+Format\+Name, std\+::string in\+File\+Extension)
+\item 
+bool \hyperlink{classAVWriter_a6a7f5e05adb1e6c62baf2012a2cfc7cc}{close\+\_\+output} ()
+\item 
+bool \hyperlink{classAVWriter_af2d42cafca32a4d9fe45dab2e3ae9716}{write\+\_\+video\+\_\+frame} (\hyperlink{classVideoFrame}{Video\+Frame} \&frame)
+\item 
+bool \hyperlink{classAVWriter_ac20a509a57e2f3dbd9a7319e267ea3e4}{write\+\_\+audio\+\_\+packet} (A\+V\+Packet \&pkt)
+\item 
+bool \hyperlink{classAVWriter_a1e65c6ce5f555bb7c514fafbff6f407a}{write\+\_\+last\+\_\+frames} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file avwriter.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAVWriter_a6a7f5e05adb1e6c62baf2012a2cfc7cc}{}\index{A\+V\+Writer@{A\+V\+Writer}!close\+\_\+output@{close\+\_\+output}}
+\index{close\+\_\+output@{close\+\_\+output}!A\+V\+Writer@{A\+V\+Writer}}
+\subsubsection[{close\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+V\+Writer\+::close\+\_\+output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAVWriter_a6a7f5e05adb1e6c62baf2012a2cfc7cc}
+Correct closing of the output file. \begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file avwriter.\+cpp.
+
+\hypertarget{classAVWriter_a07d7498d6d2dda57dd1d61432f09067c}{}\index{A\+V\+Writer@{A\+V\+Writer}!initialize\+\_\+output@{initialize\+\_\+output}}
+\index{initialize\+\_\+output@{initialize\+\_\+output}!A\+V\+Writer@{A\+V\+Writer}}
+\subsubsection[{initialize\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+V\+Writer\+::initialize\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename, }
+\item[{A\+V\+Stream const $\ast$}]{in\+Video\+Stream, }
+\item[{A\+V\+Stream const $\ast$}]{in\+Audio\+Stream, }
+\item[{char const $\ast$}]{in\+Format\+Name, }
+\item[{std\+::string}]{in\+File\+Extension}
+\end{DoxyParamCaption}
+)}\label{classAVWriter_a07d7498d6d2dda57dd1d61432f09067c}
+Initializes contexts, opens codecs and opens the output file for writing. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Output filename \\
+\hline
+{\em in\+Video\+Stream} & Input video stream \\
+\hline
+{\em in\+Audio\+Stream} & Input audio stream \\
+\hline
+{\em in\+Format\+Name} & Name of the input file format \\
+\hline
+{\em in\+File\+Extension} & Extension of the input file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if initialization successful 
+\end{DoxyReturn}
+choose extension according the file format\+: std\+::string str(format\+Context-\/$>$iformat-\/$>$name); std\+::string ext = str.\+substr(0, str.\+find(\textquotesingle{},\textquotesingle{})); filename += \char`\"{}.\char`\"{}; filename += ext; q\+Debug() $<$$<$ ext.\+c\+\_\+str(); avformat\+\_\+alloc\+\_\+output\+\_\+context2(\&format\+Context2, N\+U\+L\+L, ext.\+c\+\_\+str(), N\+U\+L\+L); // allocation of output context
+
+\begin{DoxyVerb} Output video format deduction form the (output) filename.
+ It is disabled because format should match the input format so as extra settings is not needed.
+ Encoding to some other formats might not be valid especially because mixed PTS and DTS
+\end{DoxyVerb}
+
+
+std\+::string original\+Filename = filename; // \char`\"{}filename\char`\"{} might change the extension if needed; \char`\"{}original\+Filename\char`\"{} stores the argument Allocating output media context avformat\+\_\+alloc\+\_\+output\+\_\+context2(\&format\+Context, nullptr, nullptr, filename.\+c\+\_\+str()); // allocation of output context
+
+if (!format\+Context $\vert$$\vert$ format\+Context-\/$>$oformat-\/$>$video\+\_\+codec == A\+V\+\_\+\+C\+O\+D\+E\+C\+\_\+\+I\+D\+\_\+\+N\+O\+N\+E) \{ if (!format\+Context) \{ q\+Debug() $<$$<$ \char`\"{}\+Warning\+: Could not deduce output format from file extension. Deducing from input format instead.\char`\"{}; \} else \{ q\+Debug() $<$$<$ \char`\"{}\+Warning\+: File format deduced from file extension does not support video. Deducing from input format instead.\char`\"{}; avformat\+\_\+free\+\_\+context(format\+Context); format\+Context = nullptr; \}
+
+Try allocate format\+Context according to input format name and set appropriate extension The new extension is added after the previous one (user might want to have a dot in the filename) std\+::string str(in\+Format\+Name); std\+::string ext = str.\+substr(0, str.\+find(\textquotesingle{},\textquotesingle{})); // Finds first extension that belongs to given file format if (!ext.empty()) // Appropriate extension found \{ filename = original\+Filename + \char`\"{}.\char`\"{} + ext; q\+Debug() $<$$<$ ext.\+c\+\_\+str(); avformat\+\_\+alloc\+\_\+output\+\_\+context2(\&format\+Context, N\+U\+L\+L, ext.\+c\+\_\+str(), N\+U\+L\+L); // allocation of output context \} \}
+
+Definition at line 32 of file avwriter.\+cpp.
+
+\hypertarget{classAVWriter_ac20a509a57e2f3dbd9a7319e267ea3e4}{}\index{A\+V\+Writer@{A\+V\+Writer}!write\+\_\+audio\+\_\+packet@{write\+\_\+audio\+\_\+packet}}
+\index{write\+\_\+audio\+\_\+packet@{write\+\_\+audio\+\_\+packet}!A\+V\+Writer@{A\+V\+Writer}}
+\subsubsection[{write\+\_\+audio\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+V\+Writer\+::write\+\_\+audio\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{A\+V\+Packet \&}]{pkt}
+\end{DoxyParamCaption}
+)}\label{classAVWriter_ac20a509a57e2f3dbd9a7319e267ea3e4}
+Writes the audio packet to the output audio stream. 
+\begin{DoxyParams}{Parameters}
+{\em pkt} & Packet to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 416 of file avwriter.\+cpp.
+
+\hypertarget{classAVWriter_a1e65c6ce5f555bb7c514fafbff6f407a}{}\index{A\+V\+Writer@{A\+V\+Writer}!write\+\_\+last\+\_\+frames@{write\+\_\+last\+\_\+frames}}
+\index{write\+\_\+last\+\_\+frames@{write\+\_\+last\+\_\+frames}!A\+V\+Writer@{A\+V\+Writer}}
+\subsubsection[{write\+\_\+last\+\_\+frames}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+V\+Writer\+::write\+\_\+last\+\_\+frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAVWriter_a1e65c6ce5f555bb7c514fafbff6f407a}
+Writes all frames remaining in the encoder; emptying buffers. \begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 376 of file avwriter.\+cpp.
+
+\hypertarget{classAVWriter_af2d42cafca32a4d9fe45dab2e3ae9716}{}\index{A\+V\+Writer@{A\+V\+Writer}!write\+\_\+video\+\_\+frame@{write\+\_\+video\+\_\+frame}}
+\index{write\+\_\+video\+\_\+frame@{write\+\_\+video\+\_\+frame}!A\+V\+Writer@{A\+V\+Writer}}
+\subsubsection[{write\+\_\+video\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+V\+Writer\+::write\+\_\+video\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} \&}]{frame}
+\end{DoxyParamCaption}
+)}\label{classAVWriter_af2d42cafca32a4d9fe45dab2e3ae9716}
+Writes the video frame to the output video stream. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+Commented because not tested if (format\+Context-\/$>$oformat-\/$>$flags \& A\+V\+F\+M\+T\+\_\+\+R\+A\+W\+P\+I\+C\+T\+U\+R\+E) \{ // avoiding data copy with some raw video muxers q\+Debug() $<$$<$ \char`\"{}raw\char`\"{}; pkt.\+flags $\vert$= A\+V\+\_\+\+P\+K\+T\+\_\+\+F\+L\+A\+G\+\_\+\+K\+E\+Y; pkt.\+stream\+\_\+index = video\+Stream-\/$>$index; pkt.\+data = (uint8\+\_\+t $\ast$)av\+Frame; pkt.\+size = sizeof(\+A\+V\+Picture); pkt.\+pts = pkt.\+dts = frame.\+get\+\_\+timestamp(); \} else \{
+
+\} 
+
+Definition at line 309 of file avwriter.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{avwriter_8h}{avwriter.\+h}\item 
+sources/\hyperlink{avwriter_8cpp}{avwriter.\+cpp}\end{DoxyCompactItemize}

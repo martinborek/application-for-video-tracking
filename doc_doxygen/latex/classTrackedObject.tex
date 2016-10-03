@@ -1,0 +1,572 @@
+\hypertarget{classTrackedObject}{}\section{Tracked\+Object Class Reference}
+\label{classTrackedObject}\index{Tracked\+Object@{Tracked\+Object}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classTrackedObject_ad6686a8c268d09f3c011d8fb33511550}{serialize} (Archive \&archive)
+\item 
+\hyperlink{classTrackedObject_ae5a9674bcce5464701811b6cd139dfaf}{Tracked\+Object} ()
+\item 
+\hyperlink{classTrackedObject_a30bc37fb38fd057d021c3dbe3f73b58e}{Tracked\+Object} (\hyperlink{structCharacteristics}{Characteristics} const \&appearance, std\+::string object\+Name, int64\+\_\+t initial\+Timestamp, \hyperlink{structSelection}{Selection} initial\+Position, unsigned long initial\+Time\+Position, unsigned long initial\+Frame\+Number, bool end\+Timestamp\+Set, int64\+\_\+t end\+Timestamp, unsigned long end\+Time\+Position, unsigned long end\+Frame\+Number)
+\item 
+\hyperlink{classTrackedObject_a3f9317e1ad294d3a391dfec7f7f926c0}{$\sim$\+Tracked\+Object} ()
+\item 
+void \hyperlink{classTrackedObject_a4cc6a3528caa148af9ab533a2bba587a}{add\+\_\+section} (int64\+\_\+t initial\+Timestamp, \hyperlink{structSelection}{Selection} const \&initial\+Position, unsigned long initial\+Time\+Position, unsigned long initial\+Frame\+Number)
+\item 
+bool \hyperlink{classTrackedObject_a89b293eacf57450551ecd30e768586be}{set\+\_\+trajectory\+\_\+section} (int64\+\_\+t new\+Timestamp, \hyperlink{structSelection}{Selection} position, unsigned long time\+Position, unsigned long frame\+Number)
+\item 
+bool \hyperlink{classTrackedObject_a0e8fd437e3e5af6d61d4cf3001463fa9}{change\+\_\+trajectory\+\_\+section} (int64\+\_\+t old\+Timestamp, int64\+\_\+t new\+Timestamp, \hyperlink{structSelection}{Selection} position, unsigned long time\+Position, unsigned long frame\+Number)
+\item 
+bool \hyperlink{classTrackedObject_a182387420b031f8c0c8a6dd102ebd10a}{change\+\_\+end\+\_\+frame} (bool set, int64\+\_\+t timestamp=0, unsigned long time\+Position=0, unsigned long frame\+Number=0)
+\item 
+void \hyperlink{classTrackedObject_a3f45315ecc8fcabeff15baefe19a5873}{change\+\_\+appearance} (\hyperlink{structCharacteristics}{Characteristics} const \&new\+Appearance)
+\item 
+\hyperlink{structCharacteristics}{Characteristics} \hyperlink{classTrackedObject_a798947c38b78d2c4da95cefa75a4d055}{get\+\_\+appearance} () const 
+\item 
+bool \hyperlink{classTrackedObject_af5b7f92c243707b5e2dfba099b50a3bd}{get\+\_\+position} (int64\+\_\+t timestamp, \hyperlink{structSelection}{Selection} \&tracked\+Position) const 
+\item 
+\hyperlink{structSelection}{Selection} \hyperlink{classTrackedObject_ae5dbab7c99f67ebfb2652ff01bfb34ff}{track\+\_\+next} (\hyperlink{classVideoFrame}{Video\+Frame} const $\ast$frame)
+\item 
+bool \hyperlink{classTrackedObject_a0ae55bacfcc78767b4d6ebe60a56db02}{draw\+\_\+mark} (cv\+::\+Mat \&frame, cv\+::\+Mat const \&original\+Frame, int64\+\_\+t timestamp) const 
+\item 
+std\+::map$<$ int64\+\_\+t, \hyperlink{structTrajectorySection}{Trajectory\+Section} $>$ const \& \hyperlink{classTrackedObject_af5fbc14bdee8d07311a9ba1ae9a32fd1}{get\+\_\+trajectory\+\_\+sections} () const 
+\item 
+std\+::map$<$ int64\+\_\+t, \hyperlink{structTrajectoryEntry}{Trajectory\+Entry} $>$ const \& \hyperlink{classTrackedObject_a1dc7353a75375f52a5c50296d77accb1}{get\+\_\+trajectory} () const 
+\item 
+int64\+\_\+t \hyperlink{classTrackedObject_a8a3294129b27947d40b2ccfa56bf578f}{get\+\_\+initial\+\_\+timestamp} () const 
+\item 
+int64\+\_\+t \hyperlink{classTrackedObject_a53303d656ec1a2cb664fdf3e9f4864af}{get\+\_\+end\+\_\+timestamp} () const 
+\item 
+unsigned long \hyperlink{classTrackedObject_a6899113e3ea7e025944e0ebb1fe38e93}{get\+\_\+end\+\_\+time\+\_\+position} () const 
+\item 
+unsigned long \hyperlink{classTrackedObject_acd0994794b432d6719196694f3718eda}{get\+\_\+end\+\_\+frame\+\_\+number} () const 
+\item 
+bool \hyperlink{classTrackedObject_a9dc31fd996676625f1ff96ce0d3e06ba}{get\+\_\+last\+\_\+processed\+\_\+timestamp} (int64\+\_\+t \&timestamp) const 
+\item 
+void \hyperlink{classTrackedObject_a000d56a6c6ac09ae5ee8b9e9fd016166}{set\+\_\+all\+\_\+processed} (bool processed)
+\item 
+bool \hyperlink{classTrackedObject_a4cbf70c8e11639d0f75065afbb167ab7}{is\+\_\+all\+\_\+processed} () const 
+\item 
+bool \hyperlink{classTrackedObject_af26454650654b9f390c1998e793dc3a8}{is\+\_\+end\+\_\+timestamp\+\_\+set} () const 
+\item 
+bool \hyperlink{classTrackedObject_a9429f18b7212b7e9e65604db5df9c209}{delete\+\_\+trajectory\+\_\+section} (int64\+\_\+t timestamp)
+\item 
+std\+::string \hyperlink{classTrackedObject_aacfdd49a2fc7f965e5368f21dc679957}{get\+\_\+name} () const 
+\item 
+bool \hyperlink{classTrackedObject_a166a4106e959819408d2d7a8b6c4308b}{set\+\_\+name} (std\+::string new\+Name)
+\item 
+void \hyperlink{classTrackedObject_ae33a79be587578620f63e426116846ff}{erase\+\_\+trajectory\+\_\+to\+\_\+comply} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 113 of file trackedobject.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTrackedObject_ae5a9674bcce5464701811b6cd139dfaf}{}\index{Tracked\+Object@{Tracked\+Object}!Tracked\+Object@{Tracked\+Object}}
+\index{Tracked\+Object@{Tracked\+Object}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{Tracked\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Tracked\+Object\+::\+Tracked\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_ae5a9674bcce5464701811b6cd139dfaf}
+Constructor 
+
+Definition at line 13 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a30bc37fb38fd057d021c3dbe3f73b58e}{}\index{Tracked\+Object@{Tracked\+Object}!Tracked\+Object@{Tracked\+Object}}
+\index{Tracked\+Object@{Tracked\+Object}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{Tracked\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Tracked\+Object\+::\+Tracked\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Characteristics} const \&}]{appearance, }
+\item[{std\+::string}]{object\+Name, }
+\item[{int64\+\_\+t}]{initial\+Timestamp, }
+\item[{{\bf Selection}}]{initial\+Position, }
+\item[{unsigned long}]{initial\+Time\+Position, }
+\item[{unsigned long}]{initial\+Frame\+Number, }
+\item[{bool}]{end\+Timestamp\+Set, }
+\item[{int64\+\_\+t}]{end\+Timestamp, }
+\item[{unsigned long}]{end\+Time\+Position, }
+\item[{unsigned long}]{end\+Frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a30bc37fb38fd057d021c3dbe3f73b58e}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em appearance} & Object appearance \\
+\hline
+{\em object\+Name} & Object name \\
+\hline
+{\em initial\+Timestamp} & Initial timestamp \\
+\hline
+{\em initial\+Position} & Initial object position \\
+\hline
+{\em initial\+Time\+Position} & Initial time position \\
+\hline
+{\em initial\+Frame\+Number} & Initial frame number \\
+\hline
+{\em end\+Timestamp\+Set} & Is end timestamp set? \\
+\hline
+{\em end\+Timestamp} & End timestamp \\
+\hline
+{\em end\+Time\+Position} & End time position \\
+\hline
+{\em end\+Frame\+Number} & End frame number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a3f9317e1ad294d3a391dfec7f7f926c0}{}\index{Tracked\+Object@{Tracked\+Object}!````~Tracked\+Object@{$\sim$\+Tracked\+Object}}
+\index{````~Tracked\+Object@{$\sim$\+Tracked\+Object}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{$\sim$\+Tracked\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Tracked\+Object\+::$\sim$\+Tracked\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a3f9317e1ad294d3a391dfec7f7f926c0}
+Destructor if (tracking\+Algorithm) \{ // was it already initialized (by initialize\+\_\+section)? delete tracking\+Algorithm; tracking\+Algorithm = nullptr; \}
+
+Definition at line 44 of file trackedobject.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTrackedObject_a4cc6a3528caa148af9ab533a2bba587a}{}\index{Tracked\+Object@{Tracked\+Object}!add\+\_\+section@{add\+\_\+section}}
+\index{add\+\_\+section@{add\+\_\+section}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{add\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}void Tracked\+Object\+::add\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{initial\+Timestamp, }
+\item[{{\bf Selection} const \&}]{initial\+Position, }
+\item[{unsigned long}]{initial\+Time\+Position, }
+\item[{unsigned long}]{initial\+Frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a4cc6a3528caa148af9ab533a2bba587a}
+Adds a trajectory section of the object 
+\begin{DoxyParams}{Parameters}
+{\em initial\+Timestamp} & Initial timestamp of the section \\
+\hline
+{\em initial\+Position} & Object position at the initial timestamp \\
+\hline
+{\em initial\+Time\+Position} & Initial time position of the section \\
+\hline
+{\em initial\+Frame\+Number} & Initial frame number of the section \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a3f45315ecc8fcabeff15baefe19a5873}{}\index{Tracked\+Object@{Tracked\+Object}!change\+\_\+appearance@{change\+\_\+appearance}}
+\index{change\+\_\+appearance@{change\+\_\+appearance}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{change\+\_\+appearance}]{\setlength{\rightskip}{0pt plus 5cm}void Tracked\+Object\+::change\+\_\+appearance (
+\begin{DoxyParamCaption}
+\item[{{\bf Characteristics} const \&}]{new\+Appearance}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a3f45315ecc8fcabeff15baefe19a5873}
+Changes appearance of the object. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Appearance} & New appearance of the object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 342 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a182387420b031f8c0c8a6dd102ebd10a}{}\index{Tracked\+Object@{Tracked\+Object}!change\+\_\+end\+\_\+frame@{change\+\_\+end\+\_\+frame}}
+\index{change\+\_\+end\+\_\+frame@{change\+\_\+end\+\_\+frame}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{change\+\_\+end\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::change\+\_\+end\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{bool}]{set, }
+\item[{int64\+\_\+t}]{timestamp = {\ttfamily 0}, }
+\item[{unsigned long}]{time\+Position = {\ttfamily 0}, }
+\item[{unsigned long}]{frame\+Number = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a182387420b031f8c0c8a6dd102ebd10a}
+Changes the end frame of the object. 
+\begin{DoxyParams}{Parameters}
+{\em set} & Set / unset last frame \\
+\hline
+{\em timestamp} & Timestamp of the last frame \\
+\hline
+{\em time\+Position} & Time position of the last frame \\
+\hline
+{\em frame\+Number} & Frame number of the last frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 274 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a0e8fd437e3e5af6d61d4cf3001463fa9}{}\index{Tracked\+Object@{Tracked\+Object}!change\+\_\+trajectory\+\_\+section@{change\+\_\+trajectory\+\_\+section}}
+\index{change\+\_\+trajectory\+\_\+section@{change\+\_\+trajectory\+\_\+section}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{change\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::change\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{old\+Timestamp, }
+\item[{int64\+\_\+t}]{new\+Timestamp, }
+\item[{{\bf Selection}}]{position, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a0e8fd437e3e5af6d61d4cf3001463fa9}
+Changes a trajectory section of the object. 
+\begin{DoxyParams}{Parameters}
+{\em old\+Timestamp} & Old timestamp of the section \\
+\hline
+{\em new\+Timestamp} & New timestamp of the section \\
+\hline
+{\em position} & Object position at the first frame of the section \\
+\hline
+{\em time\+Position} & Time position of the section \\
+\hline
+{\em frame\+Number} & Frame number of the section \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a9429f18b7212b7e9e65604db5df9c209}{}\index{Tracked\+Object@{Tracked\+Object}!delete\+\_\+trajectory\+\_\+section@{delete\+\_\+trajectory\+\_\+section}}
+\index{delete\+\_\+trajectory\+\_\+section@{delete\+\_\+trajectory\+\_\+section}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{delete\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::delete\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a9429f18b7212b7e9e65604db5df9c209}
+Deletes a trajectory section. 
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & Trajectory section to be deleted begins at this timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 223 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a0ae55bacfcc78767b4d6ebe60a56db02}{}\index{Tracked\+Object@{Tracked\+Object}!draw\+\_\+mark@{draw\+\_\+mark}}
+\index{draw\+\_\+mark@{draw\+\_\+mark}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{draw\+\_\+mark}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::draw\+\_\+mark (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{frame, }
+\item[{cv\+::\+Mat const \&}]{original\+Frame, }
+\item[{int64\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a0ae55bacfcc78767b4d6ebe60a56db02}
+Draws mark of the object in a frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame for drawing \\
+\hline
+{\em original\+Frame} & Original frame \\
+\hline
+{\em timestamp} & Timestamp of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 445 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_ae33a79be587578620f63e426116846ff}{}\index{Tracked\+Object@{Tracked\+Object}!erase\+\_\+trajectory\+\_\+to\+\_\+comply@{erase\+\_\+trajectory\+\_\+to\+\_\+comply}}
+\index{erase\+\_\+trajectory\+\_\+to\+\_\+comply@{erase\+\_\+trajectory\+\_\+to\+\_\+comply}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{erase\+\_\+trajectory\+\_\+to\+\_\+comply}]{\setlength{\rightskip}{0pt plus 5cm}void Tracked\+Object\+::erase\+\_\+trajectory\+\_\+to\+\_\+comply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_ae33a79be587578620f63e426116846ff}
+Erases a part of the computed trajectory. This is necessary after deserialization (with C\+E\+R\+E\+A\+L) as \hyperlink{classTrackedObject_ae5dbab7c99f67ebfb2652ff01bfb34ff}{track\+\_\+next()} initializes correct sections only when the trajectory\textquotesingle{}s last frame is the last frame of the previous section. 
+
+Definition at line 631 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a798947c38b78d2c4da95cefa75a4d055}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+appearance@{get\+\_\+appearance}}
+\index{get\+\_\+appearance@{get\+\_\+appearance}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+appearance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Characteristics} Tracked\+Object\+::get\+\_\+appearance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a798947c38b78d2c4da95cefa75a4d055}
+Returns appearance of the object. \begin{DoxyReturn}{Returns}
+Object appearance 
+\end{DoxyReturn}
+
+
+Definition at line 347 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_acd0994794b432d6719196694f3718eda}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+end\+\_\+frame\+\_\+number@{get\+\_\+end\+\_\+frame\+\_\+number}}
+\index{get\+\_\+end\+\_\+frame\+\_\+number@{get\+\_\+end\+\_\+frame\+\_\+number}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+end\+\_\+frame\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Tracked\+Object\+::get\+\_\+end\+\_\+frame\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_acd0994794b432d6719196694f3718eda}
+Returns end frame number. \begin{DoxyReturn}{Returns}
+End frame number 
+\end{DoxyReturn}
+
+
+Definition at line 570 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a6899113e3ea7e025944e0ebb1fe38e93}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+end\+\_\+time\+\_\+position@{get\+\_\+end\+\_\+time\+\_\+position}}
+\index{get\+\_\+end\+\_\+time\+\_\+position@{get\+\_\+end\+\_\+time\+\_\+position}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+end\+\_\+time\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Tracked\+Object\+::get\+\_\+end\+\_\+time\+\_\+position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a6899113e3ea7e025944e0ebb1fe38e93}
+Returns end time position. \begin{DoxyReturn}{Returns}
+End time position 
+\end{DoxyReturn}
+
+
+Definition at line 565 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a53303d656ec1a2cb664fdf3e9f4864af}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+end\+\_\+timestamp@{get\+\_\+end\+\_\+timestamp}}
+\index{get\+\_\+end\+\_\+timestamp@{get\+\_\+end\+\_\+timestamp}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+end\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Tracked\+Object\+::get\+\_\+end\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a53303d656ec1a2cb664fdf3e9f4864af}
+Returns end timestamp. \begin{DoxyReturn}{Returns}
+End timestamp 
+\end{DoxyReturn}
+
+
+Definition at line 560 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a8a3294129b27947d40b2ccfa56bf578f}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+initial\+\_\+timestamp@{get\+\_\+initial\+\_\+timestamp}}
+\index{get\+\_\+initial\+\_\+timestamp@{get\+\_\+initial\+\_\+timestamp}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+initial\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Tracked\+Object\+::get\+\_\+initial\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a8a3294129b27947d40b2ccfa56bf578f}
+Returns initial timestamp. \begin{DoxyReturn}{Returns}
+initial timestamp 
+\end{DoxyReturn}
+
+
+Definition at line 555 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a9dc31fd996676625f1ff96ce0d3e06ba}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+last\+\_\+processed\+\_\+timestamp@{get\+\_\+last\+\_\+processed\+\_\+timestamp}}
+\index{get\+\_\+last\+\_\+processed\+\_\+timestamp@{get\+\_\+last\+\_\+processed\+\_\+timestamp}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+last\+\_\+processed\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::get\+\_\+last\+\_\+processed\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t \&}]{timestamp}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a9dc31fd996676625f1ff96ce0d3e06ba}
+Returns last processed timestamp. 
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & Returned last processed timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is returned timestamp valid? 
+\end{DoxyReturn}
+
+
+Definition at line 578 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_aacfdd49a2fc7f965e5368f21dc679957}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Tracked\+Object\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_aacfdd49a2fc7f965e5368f21dc679957}
+Returns name of the object. \begin{DoxyReturn}{Returns}
+Object name 
+\end{DoxyReturn}
+
+
+Definition at line 619 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_af5b7f92c243707b5e2dfba099b50a3bd}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+position@{get\+\_\+position}}
+\index{get\+\_\+position@{get\+\_\+position}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::get\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{timestamp, }
+\item[{{\bf Selection} \&}]{tracked\+Position}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_af5b7f92c243707b5e2dfba099b50a3bd}
+Returns position of the object at frame with given timestamp. 
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & Frame timestamp \\
+\hline
+{\em tracked\+Position} & Returned object position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if trajectory with given timestamp does not exist, otherwise true. 
+\end{DoxyReturn}
+
+
+Definition at line 433 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a1dc7353a75375f52a5c50296d77accb1}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+trajectory@{get\+\_\+trajectory}}
+\index{get\+\_\+trajectory@{get\+\_\+trajectory}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+trajectory}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ int64\+\_\+t, {\bf Trajectory\+Entry} $>$ const \& Tracked\+Object\+::get\+\_\+trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a1dc7353a75375f52a5c50296d77accb1}
+Returns computed trajectory of the object. \begin{DoxyReturn}{Returns}
+Trajectory of the object 
+\end{DoxyReturn}
+
+
+Definition at line 550 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_af5fbc14bdee8d07311a9ba1ae9a32fd1}{}\index{Tracked\+Object@{Tracked\+Object}!get\+\_\+trajectory\+\_\+sections@{get\+\_\+trajectory\+\_\+sections}}
+\index{get\+\_\+trajectory\+\_\+sections@{get\+\_\+trajectory\+\_\+sections}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{get\+\_\+trajectory\+\_\+sections}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ int64\+\_\+t, {\bf Trajectory\+Section} $>$ const \& Tracked\+Object\+::get\+\_\+trajectory\+\_\+sections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_af5fbc14bdee8d07311a9ba1ae9a32fd1}
+Returns trajectory sections of the object. \begin{DoxyReturn}{Returns}
+Trajectory section of the object 
+\end{DoxyReturn}
+
+
+Definition at line 545 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a4cbf70c8e11639d0f75065afbb167ab7}{}\index{Tracked\+Object@{Tracked\+Object}!is\+\_\+all\+\_\+processed@{is\+\_\+all\+\_\+processed}}
+\index{is\+\_\+all\+\_\+processed@{is\+\_\+all\+\_\+processed}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{is\+\_\+all\+\_\+processed}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::is\+\_\+all\+\_\+processed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_a4cbf70c8e11639d0f75065afbb167ab7}
+Returns whether all trajectory is processed. \begin{DoxyReturn}{Returns}
+Is all trajectory processed? 
+\end{DoxyReturn}
+
+
+Definition at line 609 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_af26454650654b9f390c1998e793dc3a8}{}\index{Tracked\+Object@{Tracked\+Object}!is\+\_\+end\+\_\+timestamp\+\_\+set@{is\+\_\+end\+\_\+timestamp\+\_\+set}}
+\index{is\+\_\+end\+\_\+timestamp\+\_\+set@{is\+\_\+end\+\_\+timestamp\+\_\+set}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{is\+\_\+end\+\_\+timestamp\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::is\+\_\+end\+\_\+timestamp\+\_\+set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrackedObject_af26454650654b9f390c1998e793dc3a8}
+Returns whether the end timestamp is set. \begin{DoxyReturn}{Returns}
+Is end timestamp set? 
+\end{DoxyReturn}
+
+
+Definition at line 614 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_ad6686a8c268d09f3c011d8fb33511550}{}\index{Tracked\+Object@{Tracked\+Object}!serialize@{serialize}}
+\index{serialize@{serialize}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Tracked\+Object\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{archive}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classTrackedObject_ad6686a8c268d09f3c011d8fb33511550}
+C\+E\+R\+E\+A\+L serialization 
+
+Definition at line 121 of file trackedobject.\+h.
+
+\hypertarget{classTrackedObject_a000d56a6c6ac09ae5ee8b9e9fd016166}{}\index{Tracked\+Object@{Tracked\+Object}!set\+\_\+all\+\_\+processed@{set\+\_\+all\+\_\+processed}}
+\index{set\+\_\+all\+\_\+processed@{set\+\_\+all\+\_\+processed}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{set\+\_\+all\+\_\+processed}]{\setlength{\rightskip}{0pt plus 5cm}void Tracked\+Object\+::set\+\_\+all\+\_\+processed (
+\begin{DoxyParamCaption}
+\item[{bool}]{processed}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a000d56a6c6ac09ae5ee8b9e9fd016166}
+Sets value of the flag saying whether all trajectory is processed. 
+\begin{DoxyParams}{Parameters}
+{\em processed} & Set / unset \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 591 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a166a4106e959819408d2d7a8b6c4308b}{}\index{Tracked\+Object@{Tracked\+Object}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{set\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+Name}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a166a4106e959819408d2d7a8b6c4308b}
+Sets name of the object. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & New object name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 624 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_a89b293eacf57450551ecd30e768586be}{}\index{Tracked\+Object@{Tracked\+Object}!set\+\_\+trajectory\+\_\+section@{set\+\_\+trajectory\+\_\+section}}
+\index{set\+\_\+trajectory\+\_\+section@{set\+\_\+trajectory\+\_\+section}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{set\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Tracked\+Object\+::set\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{new\+Timestamp, }
+\item[{{\bf Selection}}]{position, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_a89b293eacf57450551ecd30e768586be}
+Sets a trajectory section of the object. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Timestamp} & New timestamp of the section \\
+\hline
+{\em position} & Object position at the first frame of the section \\
+\hline
+{\em time\+Position} & Time position of the section \\
+\hline
+{\em frame\+Number} & Frame number of the section \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file trackedobject.\+cpp.
+
+\hypertarget{classTrackedObject_ae5dbab7c99f67ebfb2652ff01bfb34ff}{}\index{Tracked\+Object@{Tracked\+Object}!track\+\_\+next@{track\+\_\+next}}
+\index{track\+\_\+next@{track\+\_\+next}!Tracked\+Object@{Tracked\+Object}}
+\subsubsection[{track\+\_\+next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Tracked\+Object\+::track\+\_\+next (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} const $\ast$}]{frame}
+\end{DoxyParamCaption}
+)}\label{classTrackedObject_ae5dbab7c99f67ebfb2652ff01bfb34ff}
+Computes position of the object in the next frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Next frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tracked object position 
+\end{DoxyReturn}
+
+
+Definition at line 356 of file trackedobject.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{trackedobject_8h}{trackedobject.\+h}\item 
+sources/\hyperlink{trackedobject_8cpp}{trackedobject.\+cpp}\end{DoxyCompactItemize}

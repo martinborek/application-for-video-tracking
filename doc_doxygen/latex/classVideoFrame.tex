@@ -1,0 +1,341 @@
+\hypertarget{classVideoFrame}{}\section{Video\+Frame Class Reference}
+\label{classVideoFrame}\index{Video\+Frame@{Video\+Frame}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVideoFrame_ae66f6b32cc93690f42ef8e2d35c6f435}{Video\+Frame} ()
+\item 
+\hyperlink{classVideoFrame_af5d39a4dcb1e62a1e706b940712d1205}{Video\+Frame} (const \hyperlink{classVideoFrame}{Video\+Frame} \&obj)
+\item 
+\hyperlink{classVideoFrame_afe4186defd8bbe6613ee5fb105a4f72d}{Video\+Frame} (unsigned int width, unsigned int height)
+\item 
+\hyperlink{classVideoFrame_af3b566c39ee5878c602581cb1f196675}{$\sim$\+Video\+Frame} ()
+\item 
+bool \hyperlink{classVideoFrame_a3e5610d8ab84404681fd803b18a158bb}{set\+\_\+frame} (A\+V\+Frame const $\ast$new\+Frame)
+\item 
+\hypertarget{classVideoFrame_a037a6f6e039413290206427d6fa2c25b}{}unsigned long {\bfseries get\+\_\+time\+\_\+position} () const \label{classVideoFrame_a037a6f6e039413290206427d6fa2c25b}
+
+\item 
+int64\+\_\+t \hyperlink{classVideoFrame_a9aa709fcbef2d392cb2a2493af189e91}{get\+\_\+timestamp} () const 
+\item 
+unsigned long \hyperlink{classVideoFrame_ae090e27da560e3a56dc1ca684e382816}{get\+\_\+frame\+\_\+number} () const 
+\item 
+unsigned int \hyperlink{classVideoFrame_a4b9af98d459fa34fea270d19768e3f86}{get\+\_\+width} () const 
+\item 
+unsigned int \hyperlink{classVideoFrame_a20816b24fbb4df819db961bb1b04546f}{get\+\_\+height} () const 
+\item 
+void \hyperlink{classVideoFrame_a83a8984ee14793bb57b07b409d7b36da}{set\+\_\+size} (unsigned int new\+Width, unsigned int new\+Height)
+\item 
+void \hyperlink{classVideoFrame_a514a598a06ecb3451192ea3946ab82fc}{set\+\_\+timestamp} (int64\+\_\+t new\+Timestamp)
+\item 
+void \hyperlink{classVideoFrame_aafed4e7076d4c494e8cb8a75fb158281}{set\+\_\+time\+\_\+position} (unsigned long new\+Time\+Position)
+\item 
+void \hyperlink{classVideoFrame_a80c39331c68ae3ba658ec6cf9a7b088d}{set\+\_\+frame\+\_\+number} (unsigned long new\+Frame\+Number)
+\item 
+A\+V\+Frame const $\ast$ \hyperlink{classVideoFrame_ab6c2c0442a4f7bea1193ccf95e5dec6f}{get\+\_\+av\+\_\+frame} ()
+\item 
+cv\+::\+Mat const $\ast$ \hyperlink{classVideoFrame_ae910256ad8a16261eb676e0f4f93183e}{get\+\_\+mat\+\_\+frame} () const 
+\item 
+bool \hyperlink{classVideoFrame_a61f14009edeb2d8b1104f4952c23b2d4}{A\+V\+Frame2\+Mat} (A\+V\+Frame const $\ast$src, cv\+::\+Mat $\ast$dst\+Mat) const 
+\item 
+bool \hyperlink{classVideoFrame_a78b9ebc82b2d22d040895c21452729cc}{Mat2\+A\+V\+Frame} (cv\+::\+Mat const \&src, A\+V\+Frame $\ast$dst\+A\+V\+Frame, const int dst\+Format) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVideoFrame_abc5f6e851190c1b76e22cd0e7ed38505}{}cv\+::\+Mat $\ast$ {\bfseries mat\+Frame}\label{classVideoFrame_abc5f6e851190c1b76e22cd0e7ed38505}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file videoframe.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVideoFrame_ae66f6b32cc93690f42ef8e2d35c6f435}{}\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{Video\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Frame\+::\+Video\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_ae66f6b32cc93690f42ef8e2d35c6f435}
+Constructor 
+
+Definition at line 11 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_af5d39a4dcb1e62a1e706b940712d1205}{}\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{Video\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Frame\+::\+Video\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf Video\+Frame} \&}]{obj}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_af5d39a4dcb1e62a1e706b940712d1205}
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em obj} & Original \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_afe4186defd8bbe6613ee5fb105a4f72d}{}\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\index{Video\+Frame@{Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{Video\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Frame\+::\+Video\+Frame (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{width, }
+\item[{unsigned int}]{height}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_afe4186defd8bbe6613ee5fb105a4f72d}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em width} & Frame width \\
+\hline
+{\em height} & Frame height \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_af3b566c39ee5878c602581cb1f196675}{}\index{Video\+Frame@{Video\+Frame}!````~Video\+Frame@{$\sim$\+Video\+Frame}}
+\index{````~Video\+Frame@{$\sim$\+Video\+Frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{$\sim$\+Video\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Frame\+::$\sim$\+Video\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_af3b566c39ee5878c602581cb1f196675}
+Destructor 
+
+Definition at line 47 of file videoframe.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVideoFrame_a61f14009edeb2d8b1104f4952c23b2d4}{}\index{Video\+Frame@{Video\+Frame}!A\+V\+Frame2\+Mat@{A\+V\+Frame2\+Mat}}
+\index{A\+V\+Frame2\+Mat@{A\+V\+Frame2\+Mat}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{A\+V\+Frame2\+Mat}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Frame\+::\+A\+V\+Frame2\+Mat (
+\begin{DoxyParamCaption}
+\item[{A\+V\+Frame const $\ast$}]{src, }
+\item[{cv\+::\+Mat $\ast$}]{dst\+Mat}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_a61f14009edeb2d8b1104f4952c23b2d4}
+Converts A\+V\+Frame to cv\+::\+Mat. 
+\begin{DoxyParams}{Parameters}
+{\em src} & Source A\+V\+Frame \\
+\hline
+{\em dst\+Mat} & Destination cv\+::\+Mat; It mus be allocated before using this function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_ab6c2c0442a4f7bea1193ccf95e5dec6f}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+av\+\_\+frame@{get\+\_\+av\+\_\+frame}}
+\index{get\+\_\+av\+\_\+frame@{get\+\_\+av\+\_\+frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+av\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+Frame const $\ast$ Video\+Frame\+::get\+\_\+av\+\_\+frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_ab6c2c0442a4f7bea1193ccf95e5dec6f}
+Returns the frame in A\+V\+Frame. \begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_ae090e27da560e3a56dc1ca684e382816}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+frame\+\_\+number@{get\+\_\+frame\+\_\+number}}
+\index{get\+\_\+frame\+\_\+number@{get\+\_\+frame\+\_\+number}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+frame\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Video\+Frame\+::get\+\_\+frame\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_ae090e27da560e3a56dc1ca684e382816}
+Returns frame number (index). \begin{DoxyReturn}{Returns}
+Frame number 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a20816b24fbb4df819db961bb1b04546f}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+height@{get\+\_\+height}}
+\index{get\+\_\+height@{get\+\_\+height}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Video\+Frame\+::get\+\_\+height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_a20816b24fbb4df819db961bb1b04546f}
+Returns height of the frame. \begin{DoxyReturn}{Returns}
+Frame height 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_ae910256ad8a16261eb676e0f4f93183e}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+mat\+\_\+frame@{get\+\_\+mat\+\_\+frame}}
+\index{get\+\_\+mat\+\_\+frame@{get\+\_\+mat\+\_\+frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+mat\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat const $\ast$ Video\+Frame\+::get\+\_\+mat\+\_\+frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_ae910256ad8a16261eb676e0f4f93183e}
+Returns the frame in cv\+::\+Mat. \begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+
+
+Definition at line 170 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a9aa709fcbef2d392cb2a2493af189e91}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+timestamp@{get\+\_\+timestamp}}
+\index{get\+\_\+timestamp@{get\+\_\+timestamp}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Video\+Frame\+::get\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_a9aa709fcbef2d392cb2a2493af189e91}
+Returns frame timestamp. \begin{DoxyReturn}{Returns}
+Frame timestamp 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a4b9af98d459fa34fea270d19768e3f86}{}\index{Video\+Frame@{Video\+Frame}!get\+\_\+width@{get\+\_\+width}}
+\index{get\+\_\+width@{get\+\_\+width}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{get\+\_\+width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Video\+Frame\+::get\+\_\+width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_a4b9af98d459fa34fea270d19768e3f86}
+Returns width of the frame. \begin{DoxyReturn}{Returns}
+Frame width 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a78b9ebc82b2d22d040895c21452729cc}{}\index{Video\+Frame@{Video\+Frame}!Mat2\+A\+V\+Frame@{Mat2\+A\+V\+Frame}}
+\index{Mat2\+A\+V\+Frame@{Mat2\+A\+V\+Frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{Mat2\+A\+V\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Frame\+::\+Mat2\+A\+V\+Frame (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat const \&}]{src, }
+\item[{A\+V\+Frame $\ast$}]{dst\+A\+V\+Frame, }
+\item[{const int}]{dst\+Format}
+\end{DoxyParamCaption}
+) const}\label{classVideoFrame_a78b9ebc82b2d22d040895c21452729cc}
+Converts cv\+::\+Mat to A\+V\+Frame. 
+\begin{DoxyParams}{Parameters}
+{\em src} & Source cv\+::at \\
+\hline
+{\em dst\+A\+V\+Frame} & Destination A\+V\+Frame \\
+\hline
+{\em dst\+Format} & Destination Pixel\+Format; it must be allocated before, but must not have allocated buffer (is allocated inside of this function). The buffer needs to be later freed manually. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 213 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a3e5610d8ab84404681fd803b18a158bb}{}\index{Video\+Frame@{Video\+Frame}!set\+\_\+frame@{set\+\_\+frame}}
+\index{set\+\_\+frame@{set\+\_\+frame}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{set\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Frame\+::set\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{A\+V\+Frame const $\ast$}]{new\+Frame}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_a3e5610d8ab84404681fd803b18a158bb}
+Sets a new frame 
+\begin{DoxyParams}{Parameters}
+{\em new\+Frame} & New frame data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a80c39331c68ae3ba658ec6cf9a7b088d}{}\index{Video\+Frame@{Video\+Frame}!set\+\_\+frame\+\_\+number@{set\+\_\+frame\+\_\+number}}
+\index{set\+\_\+frame\+\_\+number@{set\+\_\+frame\+\_\+number}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{set\+\_\+frame\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Frame\+::set\+\_\+frame\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{new\+Frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_a80c39331c68ae3ba658ec6cf9a7b088d}
+Sets frame number. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Frame\+Number} & New frame number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a83a8984ee14793bb57b07b409d7b36da}{}\index{Video\+Frame@{Video\+Frame}!set\+\_\+size@{set\+\_\+size}}
+\index{set\+\_\+size@{set\+\_\+size}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{set\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Frame\+::set\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{new\+Width, }
+\item[{unsigned int}]{new\+Height}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_a83a8984ee14793bb57b07b409d7b36da}
+Sets frame size. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & New frame width \\
+\hline
+{\em new\+Height} & New frame height \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 102 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_aafed4e7076d4c494e8cb8a75fb158281}{}\index{Video\+Frame@{Video\+Frame}!set\+\_\+time\+\_\+position@{set\+\_\+time\+\_\+position}}
+\index{set\+\_\+time\+\_\+position@{set\+\_\+time\+\_\+position}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{set\+\_\+time\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Frame\+::set\+\_\+time\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{new\+Time\+Position}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_aafed4e7076d4c494e8cb8a75fb158281}
+Sets time position. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Time\+Position} & New time Position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file videoframe.\+cpp.
+
+\hypertarget{classVideoFrame_a514a598a06ecb3451192ea3946ab82fc}{}\index{Video\+Frame@{Video\+Frame}!set\+\_\+timestamp@{set\+\_\+timestamp}}
+\index{set\+\_\+timestamp@{set\+\_\+timestamp}!Video\+Frame@{Video\+Frame}}
+\subsubsection[{set\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Frame\+::set\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{new\+Timestamp}
+\end{DoxyParamCaption}
+)}\label{classVideoFrame_a514a598a06ecb3451192ea3946ab82fc}
+Sets timestamp. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Timestamp} & New timestamp \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file videoframe.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{videoframe_8h}{videoframe.\+h}\item 
+sources/\hyperlink{videoframe_8cpp}{videoframe.\+cpp}\end{DoxyCompactItemize}

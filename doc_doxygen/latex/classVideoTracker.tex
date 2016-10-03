@@ -1,0 +1,874 @@
+\hypertarget{classVideoTracker}{}\section{Video\+Tracker Class Reference}
+\label{classVideoTracker}\index{Video\+Tracker@{Video\+Tracker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVideoTracker_a829485245ee54ecc195c3069024e615b}{}{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&archive)\label{classVideoTracker_a829485245ee54ecc195c3069024e615b}
+
+\item 
+\hyperlink{classVideoTracker_a8a4eb43cf75ecaec34b1b54b99d7e701}{Video\+Tracker} ()
+\item 
+\hyperlink{classVideoTracker_a83a8ecb8fe646a44aaa1c892e9a69a65}{Video\+Tracker} (std\+::string const \&video\+Addr, Q\+Progress\+Dialog const $\ast$progress\+Dialog)
+\item 
+\hyperlink{classVideoTracker_ac20788504b98efbae977d3d55459b443}{$\sim$\+Video\+Tracker} ()
+\item 
+void \hyperlink{classVideoTracker_aef0c8e2fbeaaac3fcd1737c457a4c0ea}{load\+\_\+video} (std\+::string const \&video\+Addr, Q\+Progress\+Dialog const $\ast$progress\+Dialog)
+\item 
+double \hyperlink{classVideoTracker_a2e429fbc7d3f7c4904bcfab51c8aae25}{get\+\_\+fps} () const 
+\item 
+unsigned long \hyperlink{classVideoTracker_af5ef823d494e6fdc75b4aedbd8739ba5}{get\+\_\+frame\+\_\+count} () const 
+\item 
+unsigned long \hyperlink{classVideoTracker_ac442e8d7148366c07b71ec4fc0505e5b}{get\+\_\+total\+\_\+time} () const 
+\item 
+int64\+\_\+t \hyperlink{classVideoTracker_ac9a2a134bbc59f24defb0d8920e1d79c}{get\+\_\+frame\+\_\+timestamp} () const 
+\item 
+unsigned long \hyperlink{classVideoTracker_a21c40e168f99bf04abfb071406b060b5}{get\+\_\+time\+\_\+position} () const 
+\item 
+unsigned long \hyperlink{classVideoTracker_afa5bf7dc2a1a5b90d762ff310dfc89b8}{get\+\_\+frame\+\_\+number} () const 
+\item 
+unsigned int \hyperlink{classVideoTracker_ab8d3f48ad0615b992ac0f767f206d2af}{get\+\_\+objects\+\_\+count} () const 
+\item 
+int \hyperlink{classVideoTracker_ac5078e2bfb902a7b24d76bcd570bc8f2}{add\+\_\+object} (const \hyperlink{structCharacteristics}{Characteristics} \&object\+Appearance, const std\+::string \&object\+Name, \hyperlink{structSelection}{Selection} initial\+Position, int64\+\_\+t initial\+Timestamp, unsigned long initial\+Time\+Position, unsigned long initial\+Frame\+Number, bool end\+Timestamp\+Set=false, int64\+\_\+t end\+Timestamp=0, unsigned long end\+Time\+Position=0, unsigned long end\+Frame\+Number=0)
+\item 
+bool \hyperlink{classVideoTracker_a3edec586640511e2a3e58605cfb7545d}{get\+\_\+frame\+\_\+by\+\_\+time} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, int64\+\_\+t time, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+bool \hyperlink{classVideoTracker_a5c146358a49c5c0d7d6e2ff2029b1bfb}{get\+\_\+frame\+\_\+by\+\_\+timestamp} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, int64\+\_\+t timestamp, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+bool \hyperlink{classVideoTracker_a6d0260650063aa10284d1645bbbee778}{get\+\_\+frame\+\_\+by\+\_\+number} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, unsigned long frame\+Number, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+bool \hyperlink{classVideoTracker_a23bd7731d886bd23007303246f1fb971}{get\+\_\+next\+\_\+frame} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+bool \hyperlink{classVideoTracker_ab3f64c39d4550baeb2ef0c4020895761}{get\+\_\+previous\+\_\+frame} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+bool \hyperlink{classVideoTracker_ac1f10ef86abebc2a2b1b78519e34d14d}{get\+\_\+current\+\_\+frame} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original)
+\item 
+bool \hyperlink{classVideoTracker_a9cf68ec22757e2c2a9dc7a8f6b71fc6c}{get\+\_\+first\+\_\+frame} (Q\+Image \&img\+Frame, Q\+Image \&original\+Img\+Frame, bool include\+Original, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+void \hyperlink{classVideoTracker_a155ecb70409e4f4e4670cbe7e5e0e0cd}{create\+\_\+output} (std\+::string const \&filename, Q\+Progress\+Dialog \&file\+Progress\+Dialog, Q\+Progress\+Dialog $\ast$tracking\+Progress\+Dialog, std\+::string in\+File\+Extension)
+\item 
+\hyperlink{structCharacteristics}{Characteristics} \hyperlink{classVideoTracker_a07349e6584efc93fc2fb480fe6a436b8}{get\+\_\+object\+\_\+appearance} (unsigned int object\+I\+D) const 
+\item 
+std\+::map$<$ int64\+\_\+t, \hyperlink{structTrajectorySection}{Trajectory\+Section} $>$ const \& \hyperlink{classVideoTracker_aa81777a4dd7aca72a994f883a9ae50e5}{get\+\_\+object\+\_\+trajectory\+\_\+sections} (unsigned int object\+I\+D) const 
+\item 
+std\+::map$<$ int64\+\_\+t, \hyperlink{structTrajectoryEntry}{Trajectory\+Entry} $>$ const \& \hyperlink{classVideoTracker_a1c65db5d8e998ab3525eb492bf04c171}{get\+\_\+object\+\_\+trajectory} (unsigned int object\+I\+D) const 
+\item 
+bool \hyperlink{classVideoTracker_a2769b71f5bba913e4cecba2823702eda}{change\+\_\+object\+\_\+appearance} (unsigned int object\+I\+D, \hyperlink{structCharacteristics}{Characteristics} const \&new\+Appearance)
+\item 
+void \hyperlink{classVideoTracker_ab6a9679646906aea8d6d7730b78e0948}{seek\+\_\+first\+\_\+packet} ()
+\item 
+bool \hyperlink{classVideoTracker_a50e5a543b8e31e121ac58a159f2384b2}{get\+\_\+object\+\_\+end} (unsigned int object\+I\+D, int64\+\_\+t \&timestamp, unsigned long \&time\+Position, unsigned long \&frame\+Number)
+\item 
+bool \hyperlink{classVideoTracker_abfdad55bb49e7b2c45140d884856c6bc}{change\+\_\+object\+\_\+trajectory\+\_\+section} (unsigned int object\+I\+D, int64\+\_\+t old\+Timestamp, int64\+\_\+t new\+Timestamp, \hyperlink{structSelection}{Selection} position, unsigned long time\+Position, unsigned long frame\+Number)
+\item 
+bool \hyperlink{classVideoTracker_ad238b49118cb9c288e4543b509e1e6f8}{change\+\_\+object\+\_\+end\+\_\+frame} (unsigned int object\+I\+D, bool set, int64\+\_\+t new\+Timestamp=0, unsigned long time\+Position=0, unsigned long frame\+Number=0)
+\item 
+bool \hyperlink{classVideoTracker_afef3f2aad3fc3eadc65400eb757d0e47}{delete\+\_\+object\+\_\+trajectory\+\_\+section} (unsigned int object\+I\+D, int64\+\_\+t timestamp)
+\item 
+bool \hyperlink{classVideoTracker_a67a4e9d0a476dc6bb04047c8fdc94d5b}{set\+\_\+object\+\_\+trajectory\+\_\+section} (unsigned int object\+I\+D, int64\+\_\+t new\+Timestamp, \hyperlink{structSelection}{Selection} position, unsigned long time\+Position, unsigned long frame\+Number)
+\item 
+std\+::string \hyperlink{classVideoTracker_a9f967e75fa324d4fc17a7875fe2bef1e}{get\+\_\+object\+\_\+name} (unsigned int object\+I\+D)
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classVideoTracker_a6a8d40056c7a309292eb627d84576d3a}{get\+\_\+all\+\_\+objects\+\_\+names} ()
+\item 
+void \hyperlink{classVideoTracker_ad37c9432c33014bdb3476b31fe16a4ce}{set\+\_\+object\+\_\+name} (unsigned int object\+I\+D, std\+::string new\+Name)
+\item 
+void \hyperlink{classVideoTracker_a10a09bf6a8f67c378c3bfa60255a007a}{delete\+\_\+object} (unsigned int object\+I\+D)
+\item 
+bool \hyperlink{classVideoTracker_a7b6b59eea6ef8210a234726524447d9f}{track\+\_\+object} (unsigned int object\+I\+D, Q\+Progress\+Dialog $\ast$progress\+Dialog)
+\item 
+void \hyperlink{classVideoTracker_a7400741f360deb50b33bc9b96aef9083}{erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file videotracker.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVideoTracker_a8a4eb43cf75ecaec34b1b54b99d7e701}{}\index{Video\+Tracker@{Video\+Tracker}!Video\+Tracker@{Video\+Tracker}}
+\index{Video\+Tracker@{Video\+Tracker}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{Video\+Tracker}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Tracker\+::\+Video\+Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a8a4eb43cf75ecaec34b1b54b99d7e701}
+Constructor 
+
+Definition at line 15 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a83a8ecb8fe646a44aaa1c892e9a69a65}{}\index{Video\+Tracker@{Video\+Tracker}!Video\+Tracker@{Video\+Tracker}}
+\index{Video\+Tracker@{Video\+Tracker}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{Video\+Tracker}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Tracker\+::\+Video\+Tracker (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{video\+Addr, }
+\item[{Q\+Progress\+Dialog const $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classVideoTracker_a83a8ecb8fe646a44aaa1c892e9a69a65}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em video\+Addr} & Path to a video file \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for displaying information about video opening \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ac20788504b98efbae977d3d55459b443}{}\index{Video\+Tracker@{Video\+Tracker}!````~Video\+Tracker@{$\sim$\+Video\+Tracker}}
+\index{````~Video\+Tracker@{$\sim$\+Video\+Tracker}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{$\sim$\+Video\+Tracker}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Tracker\+::$\sim$\+Video\+Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ac20788504b98efbae977d3d55459b443}
+Destructor for (\hyperlink{classTrackedObject}{Tracked\+Object} $\ast$object\+: tracked\+Objects) \{ delete object; object = nullptr; \}
+
+Definition at line 37 of file videotracker.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVideoTracker_ac5078e2bfb902a7b24d76bcd570bc8f2}{}\index{Video\+Tracker@{Video\+Tracker}!add\+\_\+object@{add\+\_\+object}}
+\index{add\+\_\+object@{add\+\_\+object}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{add\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}int Video\+Tracker\+::add\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Characteristics} \&}]{object\+Appearance, }
+\item[{const std\+::string \&}]{object\+Name, }
+\item[{{\bf Selection}}]{initial\+Position, }
+\item[{int64\+\_\+t}]{initial\+Timestamp, }
+\item[{unsigned long}]{initial\+Time\+Position, }
+\item[{unsigned long}]{initial\+Frame\+Number, }
+\item[{bool}]{end\+Timestamp\+Set = {\ttfamily false}, }
+\item[{int64\+\_\+t}]{end\+Timestamp = {\ttfamily 0}, }
+\item[{unsigned long}]{end\+Time\+Position = {\ttfamily 0}, }
+\item[{unsigned long}]{end\+Frame\+Number = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ac5078e2bfb902a7b24d76bcd570bc8f2}
+Tracks a new object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+Appearance} & Object appearance \\
+\hline
+{\em object\+Name} & Object name \\
+\hline
+{\em initial\+Position} & Initial object position \\
+\hline
+{\em initial\+Timestamp} & Initial timestamp \\
+\hline
+{\em initial\+Time\+Position} & Initial time position \\
+\hline
+{\em initial\+Frame\+Number} & Initial frame number \\
+\hline
+{\em end\+Timestamp\+Set} & Is end timestamp set? \\
+\hline
+{\em end\+Timestamp} & End timestamp \\
+\hline
+{\em end\+Time\+Position} & End time position \\
+\hline
+{\em end\+Frame\+Number} & End frame number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object I\+D; First objest has I\+D 1. If frame at initial\+Timestamp is not read, -\/1 is returned; 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a2769b71f5bba913e4cecba2823702eda}{}\index{Video\+Tracker@{Video\+Tracker}!change\+\_\+object\+\_\+appearance@{change\+\_\+object\+\_\+appearance}}
+\index{change\+\_\+object\+\_\+appearance@{change\+\_\+object\+\_\+appearance}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{change\+\_\+object\+\_\+appearance}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::change\+\_\+object\+\_\+appearance (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{{\bf Characteristics} const \&}]{new\+Appearance}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a2769b71f5bba913e4cecba2823702eda}
+Changes appearance of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em new\+Appearance} & New appearance of the object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 631 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ad238b49118cb9c288e4543b509e1e6f8}{}\index{Video\+Tracker@{Video\+Tracker}!change\+\_\+object\+\_\+end\+\_\+frame@{change\+\_\+object\+\_\+end\+\_\+frame}}
+\index{change\+\_\+object\+\_\+end\+\_\+frame@{change\+\_\+object\+\_\+end\+\_\+frame}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{change\+\_\+object\+\_\+end\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::change\+\_\+object\+\_\+end\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{bool}]{set, }
+\item[{int64\+\_\+t}]{new\+Timestamp = {\ttfamily 0}, }
+\item[{unsigned long}]{time\+Position = {\ttfamily 0}, }
+\item[{unsigned long}]{frame\+Number = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ad238b49118cb9c288e4543b509e1e6f8}
+Changes the end frame of the object. If set==false, the end frame will be unset and the object will be tracked till the end of the video. new\+Timestamp and time\+Position are valid onlt if set==true. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em set} & Set / Unset last frame \\
+\hline
+{\em new\+Timestamp} & Timestamp of the last frame \\
+\hline
+{\em time\+Position} & Time position of the last frame \\
+\hline
+{\em frame\+Number} & Frame number of the last frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if given timestamp is lower than the timestamp of Beginning. 
+\end{DoxyReturn}
+
+
+Definition at line 614 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_abfdad55bb49e7b2c45140d884856c6bc}{}\index{Video\+Tracker@{Video\+Tracker}!change\+\_\+object\+\_\+trajectory\+\_\+section@{change\+\_\+object\+\_\+trajectory\+\_\+section}}
+\index{change\+\_\+object\+\_\+trajectory\+\_\+section@{change\+\_\+object\+\_\+trajectory\+\_\+section}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{change\+\_\+object\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::change\+\_\+object\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{int64\+\_\+t}]{old\+Timestamp, }
+\item[{int64\+\_\+t}]{new\+Timestamp, }
+\item[{{\bf Selection}}]{position, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_abfdad55bb49e7b2c45140d884856c6bc}
+Changes a trajectory section of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em old\+Timestamp} & Old timestamp of the section \\
+\hline
+{\em new\+Timestamp} & New timestamp of the section \\
+\hline
+{\em position} & Object position at the first frame of the section \\
+\hline
+{\em time\+Position} & Time position of the section \\
+\hline
+{\em frame\+Number} & Frame number of the section \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 603 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a155ecb70409e4f4e4670cbe7e5e0e0cd}{}\index{Video\+Tracker@{Video\+Tracker}!create\+\_\+output@{create\+\_\+output}}
+\index{create\+\_\+output@{create\+\_\+output}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{create\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::create\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{filename, }
+\item[{Q\+Progress\+Dialog \&}]{file\+Progress\+Dialog, }
+\item[{Q\+Progress\+Dialog $\ast$}]{tracking\+Progress\+Dialog, }
+\item[{std\+::string}]{in\+File\+Extension}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a155ecb70409e4f4e4670cbe7e5e0e0cd}
+Creates an output media file including all tracked objects. Throws \hyperlink{structUserCanceledException}{User\+Canceled\+Exception} when user clicked \char`\"{}\+Cancel\char`\"{} button in the progress dialog Mind there are two progress dialogs. One is in track\+\_\+all() and displays infinet progress bar when counting objects positions. The second progress dialog (file\+Progress\+Dialog shows percentage of creating the output file. When the first one (in track\+\_\+all()) is canceled, the second one should be canceled too
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Output filename \\
+\hline
+{\em file\+Progress\+Dialog} & Q\+T progress dialog for showing an information about creating the file progress \\
+\hline
+{\em tracking\+Progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+{\em in\+File\+Extension} & Input file extensions \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 458 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a10a09bf6a8f67c378c3bfa60255a007a}{}\index{Video\+Tracker@{Video\+Tracker}!delete\+\_\+object@{delete\+\_\+object}}
+\index{delete\+\_\+object@{delete\+\_\+object}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{delete\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::delete\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a10a09bf6a8f67c378c3bfa60255a007a}
+Removes the object 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 647 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_afef3f2aad3fc3eadc65400eb757d0e47}{}\index{Video\+Tracker@{Video\+Tracker}!delete\+\_\+object\+\_\+trajectory\+\_\+section@{delete\+\_\+object\+\_\+trajectory\+\_\+section}}
+\index{delete\+\_\+object\+\_\+trajectory\+\_\+section@{delete\+\_\+object\+\_\+trajectory\+\_\+section}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{delete\+\_\+object\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::delete\+\_\+object\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{int64\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_afef3f2aad3fc3eadc65400eb757d0e47}
+Deletes a trajectory section of the object 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em timestamp} & Trajectory section to be deleted begins at this timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 609 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a7400741f360deb50b33bc9b96aef9083}{}\index{Video\+Tracker@{Video\+Tracker}!erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply@{erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply}}
+\index{erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply@{erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::erase\+\_\+object\+\_\+trajectories\+\_\+to\+\_\+comply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a7400741f360deb50b33bc9b96aef9083}
+Erases a part of the computed trajectory. This is necessary after deserialization (with C\+E\+R\+E\+A\+L) as track\+\_\+next() initializes correct sections only when the trajectory\textquotesingle{}s last frame is the last frame of the previous section. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object\+I\+D \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 663 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a6a8d40056c7a309292eb627d84576d3a}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+all\+\_\+objects\+\_\+names@{get\+\_\+all\+\_\+objects\+\_\+names}}
+\index{get\+\_\+all\+\_\+objects\+\_\+names@{get\+\_\+all\+\_\+objects\+\_\+names}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+all\+\_\+objects\+\_\+names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Video\+Tracker\+::get\+\_\+all\+\_\+objects\+\_\+names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a6a8d40056c7a309292eb627d84576d3a}
+Returns names of all objects. \begin{DoxyReturn}{Returns}
+Names of all objects 
+\end{DoxyReturn}
+
+
+Definition at line 653 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ac1f10ef86abebc2a2b1b78519e34d14d}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+current\+\_\+frame@{get\+\_\+current\+\_\+frame}}
+\index{get\+\_\+current\+\_\+frame@{get\+\_\+current\+\_\+frame}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+current\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+current\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ac1f10ef86abebc2a2b1b78519e34d14d}
+Gets the current frame and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 192 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a9cf68ec22757e2c2a9dc7a8f6b71fc6c}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+first\+\_\+frame@{get\+\_\+first\+\_\+frame}}
+\index{get\+\_\+first\+\_\+frame@{get\+\_\+first\+\_\+frame}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+first\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+first\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a9cf68ec22757e2c2a9dc7a8f6b71fc6c}
+Reads the first frame and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a2e429fbc7d3f7c4904bcfab51c8aae25}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+fps@{get\+\_\+fps}}
+\index{get\+\_\+fps@{get\+\_\+fps}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+fps}]{\setlength{\rightskip}{0pt plus 5cm}double Video\+Tracker\+::get\+\_\+fps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_a2e429fbc7d3f7c4904bcfab51c8aae25}
+Returns frames per second value of the video. \begin{DoxyReturn}{Returns}
+Frames per second
+\end{DoxyReturn}
+bool Video\+Tracker\+::set\+\_\+frame\+\_\+position(int const \&position) \{ return player-\/$>$set\+\_\+frame\+\_\+position(position); \} bool Video\+Tracker\+::set\+\_\+time\+\_\+position(int const \&position) \{ return player-\/$>$set\+\_\+time\+\_\+position(position); \} 
+
+Definition at line 422 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a6d0260650063aa10284d1645bbbee778}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+by\+\_\+number@{get\+\_\+frame\+\_\+by\+\_\+number}}
+\index{get\+\_\+frame\+\_\+by\+\_\+number@{get\+\_\+frame\+\_\+by\+\_\+number}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+frame\+\_\+by\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{unsigned long}]{frame\+Number, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a6d0260650063aa10284d1645bbbee778}
+Reads a frame by its frame number (index) and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em frame\+Number} & Frame number (index) \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a3edec586640511e2a3e58605cfb7545d}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+by\+\_\+time@{get\+\_\+frame\+\_\+by\+\_\+time}}
+\index{get\+\_\+frame\+\_\+by\+\_\+time@{get\+\_\+frame\+\_\+by\+\_\+time}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+frame\+\_\+by\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{int64\+\_\+t}]{time, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a3edec586640511e2a3e58605cfb7545d}
+Reads a frame by its time position and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em time} & Time position \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a5c146358a49c5c0d7d6e2ff2029b1bfb}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+by\+\_\+timestamp@{get\+\_\+frame\+\_\+by\+\_\+timestamp}}
+\index{get\+\_\+frame\+\_\+by\+\_\+timestamp@{get\+\_\+frame\+\_\+by\+\_\+timestamp}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+frame\+\_\+by\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{int64\+\_\+t}]{timestamp, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a5c146358a49c5c0d7d6e2ff2029b1bfb}
+Reads a frame by its timestamp and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em timestamp} & Timestamp \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_af5ef823d494e6fdc75b4aedbd8739ba5}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+count@{get\+\_\+frame\+\_\+count}}
+\index{get\+\_\+frame\+\_\+count@{get\+\_\+frame\+\_\+count}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Video\+Tracker\+::get\+\_\+frame\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_af5ef823d494e6fdc75b4aedbd8739ba5}
+Returns information about number of frames. \begin{DoxyReturn}{Returns}
+Number of frames 
+\end{DoxyReturn}
+
+
+Definition at line 427 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_afa5bf7dc2a1a5b90d762ff310dfc89b8}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+number@{get\+\_\+frame\+\_\+number}}
+\index{get\+\_\+frame\+\_\+number@{get\+\_\+frame\+\_\+number}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Video\+Tracker\+::get\+\_\+frame\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_afa5bf7dc2a1a5b90d762ff310dfc89b8}
+Returns frame number of the current frame. \begin{DoxyReturn}{Returns}
+Frame number 
+\end{DoxyReturn}
+
+
+Definition at line 448 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ac9a2a134bbc59f24defb0d8920e1d79c}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+frame\+\_\+timestamp@{get\+\_\+frame\+\_\+timestamp}}
+\index{get\+\_\+frame\+\_\+timestamp@{get\+\_\+frame\+\_\+timestamp}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+frame\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Video\+Tracker\+::get\+\_\+frame\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_ac9a2a134bbc59f24defb0d8920e1d79c}
+Returns timestamp of the current frame. \begin{DoxyReturn}{Returns}
+Timestamp 
+\end{DoxyReturn}
+
+
+Definition at line 438 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a23bd7731d886bd23007303246f1fb971}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+next\+\_\+frame@{get\+\_\+next\+\_\+frame}}
+\index{get\+\_\+next\+\_\+frame@{get\+\_\+next\+\_\+frame}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+next\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+next\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a23bd7731d886bd23007303246f1fb971}
+Reads a frame following to the current one returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 142 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a07349e6584efc93fc2fb480fe6a436b8}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+object\+\_\+appearance@{get\+\_\+object\+\_\+appearance}}
+\index{get\+\_\+object\+\_\+appearance@{get\+\_\+object\+\_\+appearance}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+object\+\_\+appearance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Characteristics} Video\+Tracker\+::get\+\_\+object\+\_\+appearance (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_a07349e6584efc93fc2fb480fe6a436b8}
+Returns appearance of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object appearance 
+\end{DoxyReturn}
+
+
+Definition at line 582 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a50e5a543b8e31e121ac58a159f2384b2}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+object\+\_\+end@{get\+\_\+object\+\_\+end}}
+\index{get\+\_\+object\+\_\+end@{get\+\_\+object\+\_\+end}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+object\+\_\+end}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+object\+\_\+end (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{int64\+\_\+t \&}]{timestamp, }
+\item[{unsigned long \&}]{time\+Position, }
+\item[{unsigned long \&}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a50e5a543b8e31e121ac58a159f2384b2}
+Return information about the end of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em timestamp} & Frame timestamp \\
+\hline
+{\em time\+Position} & Time position \\
+\hline
+{\em frame\+Number} & Frame number (index) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if end is set, false if it is not. 
+\end{DoxyReturn}
+
+
+Definition at line 620 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a9f967e75fa324d4fc17a7875fe2bef1e}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+object\+\_\+name@{get\+\_\+object\+\_\+name}}
+\index{get\+\_\+object\+\_\+name@{get\+\_\+object\+\_\+name}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+object\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Video\+Tracker\+::get\+\_\+object\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a9f967e75fa324d4fc17a7875fe2bef1e}
+Returns name of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object name 
+\end{DoxyReturn}
+
+
+Definition at line 637 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a1c65db5d8e998ab3525eb492bf04c171}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+object\+\_\+trajectory@{get\+\_\+object\+\_\+trajectory}}
+\index{get\+\_\+object\+\_\+trajectory@{get\+\_\+object\+\_\+trajectory}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+object\+\_\+trajectory}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ int64\+\_\+t, {\bf Trajectory\+Entry} $>$ const \& Video\+Tracker\+::get\+\_\+object\+\_\+trajectory (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_a1c65db5d8e998ab3525eb492bf04c171}
+Returns computed trajectory of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Trajectory of the object 
+\end{DoxyReturn}
+
+
+Definition at line 592 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_aa81777a4dd7aca72a994f883a9ae50e5}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+object\+\_\+trajectory\+\_\+sections@{get\+\_\+object\+\_\+trajectory\+\_\+sections}}
+\index{get\+\_\+object\+\_\+trajectory\+\_\+sections@{get\+\_\+object\+\_\+trajectory\+\_\+sections}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+object\+\_\+trajectory\+\_\+sections}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ int64\+\_\+t, {\bf Trajectory\+Section} $>$ const \& Video\+Tracker\+::get\+\_\+object\+\_\+trajectory\+\_\+sections (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_aa81777a4dd7aca72a994f883a9ae50e5}
+Returns trajectory sections of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Trajectory section of the object 
+\end{DoxyReturn}
+
+
+Definition at line 587 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ab8d3f48ad0615b992ac0f767f206d2af}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+objects\+\_\+count@{get\+\_\+objects\+\_\+count}}
+\index{get\+\_\+objects\+\_\+count@{get\+\_\+objects\+\_\+count}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+objects\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Video\+Tracker\+::get\+\_\+objects\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_ab8d3f48ad0615b992ac0f767f206d2af}
+Returns number of tracked objects \begin{DoxyReturn}{Returns}
+Number of tracked objects 
+\end{DoxyReturn}
+
+
+Definition at line 453 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ab3f64c39d4550baeb2ef0c4020895761}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+previous\+\_\+frame@{get\+\_\+previous\+\_\+frame}}
+\index{get\+\_\+previous\+\_\+frame@{get\+\_\+previous\+\_\+frame}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+previous\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::get\+\_\+previous\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{img\+Frame, }
+\item[{Q\+Image \&}]{original\+Img\+Frame, }
+\item[{bool}]{include\+Original, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ab3f64c39d4550baeb2ef0c4020895761}
+Reads a frame preceding to the current one returns it. 
+\begin{DoxyParams}{Parameters}
+{\em img\+Frame} & Altered read frame (contains tracked objects) converted to be displayed in Q\+T \\
+\hline
+{\em original\+Img\+Frame} & Read frame converted to be displayed in Q\+T. \\
+\hline
+{\em include\+Original} & Should be original frame read? If not, original\+Img\+Frame does not contain a valid frame. \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking objects process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 168 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a21c40e168f99bf04abfb071406b060b5}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+time\+\_\+position@{get\+\_\+time\+\_\+position}}
+\index{get\+\_\+time\+\_\+position@{get\+\_\+time\+\_\+position}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+time\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Video\+Tracker\+::get\+\_\+time\+\_\+position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_a21c40e168f99bf04abfb071406b060b5}
+Returns time position of the current frame. \begin{DoxyReturn}{Returns}
+Time position in milliseconds 
+\end{DoxyReturn}
+
+
+Definition at line 443 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ac442e8d7148366c07b71ec4fc0505e5b}{}\index{Video\+Tracker@{Video\+Tracker}!get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}}
+\index{get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{get\+\_\+total\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Video\+Tracker\+::get\+\_\+total\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classVideoTracker_ac442e8d7148366c07b71ec4fc0505e5b}
+Returns information about video length. \begin{DoxyReturn}{Returns}
+Video length in milliseconds 
+\end{DoxyReturn}
+
+
+Definition at line 432 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_aef0c8e2fbeaaac3fcd1737c457a4c0ea}{}\index{Video\+Tracker@{Video\+Tracker}!load\+\_\+video@{load\+\_\+video}}
+\index{load\+\_\+video@{load\+\_\+video}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{load\+\_\+video}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::load\+\_\+video (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{video\+Addr, }
+\item[{Q\+Progress\+Dialog const $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_aef0c8e2fbeaaac3fcd1737c457a4c0ea}
+Loads a new video file. 
+\begin{DoxyParams}{Parameters}
+{\em video\+Addr} & Path to a video file \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for displaying information about video opening \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ab6a9679646906aea8d6d7730b78e0948}{}\index{Video\+Tracker@{Video\+Tracker}!seek\+\_\+first\+\_\+packet@{seek\+\_\+first\+\_\+packet}}
+\index{seek\+\_\+first\+\_\+packet@{seek\+\_\+first\+\_\+packet}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{seek\+\_\+first\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::seek\+\_\+first\+\_\+packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ab6a9679646906aea8d6d7730b78e0948}
+Rewinds the video to its beginning by seeking its first packet. 
+
+Definition at line 57 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_ad37c9432c33014bdb3476b31fe16a4ce}{}\index{Video\+Tracker@{Video\+Tracker}!set\+\_\+object\+\_\+name@{set\+\_\+object\+\_\+name}}
+\index{set\+\_\+object\+\_\+name@{set\+\_\+object\+\_\+name}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{set\+\_\+object\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+Tracker\+::set\+\_\+object\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{std\+::string}]{new\+Name}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_ad37c9432c33014bdb3476b31fe16a4ce}
+Sets name of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em new\+Name} & New object name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 642 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a67a4e9d0a476dc6bb04047c8fdc94d5b}{}\index{Video\+Tracker@{Video\+Tracker}!set\+\_\+object\+\_\+trajectory\+\_\+section@{set\+\_\+object\+\_\+trajectory\+\_\+section}}
+\index{set\+\_\+object\+\_\+trajectory\+\_\+section@{set\+\_\+object\+\_\+trajectory\+\_\+section}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{set\+\_\+object\+\_\+trajectory\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::set\+\_\+object\+\_\+trajectory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{int64\+\_\+t}]{new\+Timestamp, }
+\item[{{\bf Selection}}]{position, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a67a4e9d0a476dc6bb04047c8fdc94d5b}
+Sets a trajectory section of the object. 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object I\+D \\
+\hline
+{\em new\+Timestamp} & New timestamp of the section \\
+\hline
+{\em position} & Object position at the first frame of the section \\
+\hline
+{\em time\+Position} & Time position of the section \\
+\hline
+{\em frame\+Number} & Frame number of the section \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 597 of file videotracker.\+cpp.
+
+\hypertarget{classVideoTracker_a7b6b59eea6ef8210a234726524447d9f}{}\index{Video\+Tracker@{Video\+Tracker}!track\+\_\+object@{track\+\_\+object}}
+\index{track\+\_\+object@{track\+\_\+object}!Video\+Tracker@{Video\+Tracker}}
+\subsubsection[{track\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Tracker\+::track\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{object\+I\+D, }
+\item[{Q\+Progress\+Dialog $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classVideoTracker_a7b6b59eea6ef8210a234726524447d9f}
+Computes all trajectory for the tracked object 
+\begin{DoxyParams}{Parameters}
+{\em object\+I\+D} & Object\+I\+D \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for showing an information about tracking object process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file videotracker.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{videotracker_8h}{videotracker.\+h}\item 
+sources/\hyperlink{videotracker_8cpp}{videotracker.\+cpp}\end{DoxyCompactItemize}

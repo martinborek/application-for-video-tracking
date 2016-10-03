@@ -1,0 +1,210 @@
+\hypertarget{classAnchorItem}{}\section{Anchor\+Item Class Reference}
+\label{classAnchorItem}\index{Anchor\+Item@{Anchor\+Item}}
+Inheritance diagram for Anchor\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAnchorItem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnchorItem_a06c620842bbbe71cd1066f08a5000196}{Anchor\+Item} (Item\+Type type, int64\+\_\+t timestamp, unsigned long time\+Position, unsigned long total\+Time, unsigned long frame\+Number, unsigned long frame\+Count, Q\+Widget $\ast$parent, bool is\+Set=true, bool display\+Time=false)
+\item 
+\hyperlink{classAnchorItem_aa53b59e4ced3b72ed61c28d467bf822f}{$\sim$\+Anchor\+Item} ()
+\item 
+Item\+Type \hyperlink{classAnchorItem_a3cb5fa754bc1bfd9bad4dd6e6ff22bb6}{get\+\_\+type} ()
+\item 
+bool \hyperlink{classAnchorItem_aff8a1bd4b6c6645fd1cec15ce4ba8474}{is\+\_\+set} ()
+\item 
+void \hyperlink{classAnchorItem_ae900d01f71ff480d4bbbfee8ef7fac80}{set\+\_\+highlight} (bool set)
+\item 
+int64\+\_\+t \hyperlink{classAnchorItem_a3bdcec9b92921e16810b5251a5273afa}{get\+\_\+timestamp} () const 
+\item 
+void \hyperlink{classAnchorItem_a3905061f30d8b6a77b00ad52311605af}{display\+\_\+time} ()
+\item 
+void \hyperlink{classAnchorItem_a4b9fb672e2ebc5289c116027dc8a383d}{display\+\_\+frame\+\_\+num} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAnchorItem_a78686f7c51def036159b1dfe56be9b33}{event\+Filter} (Q\+Object $\ast$object, Q\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file anchoritem.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAnchorItem_a06c620842bbbe71cd1066f08a5000196}{}\index{Anchor\+Item@{Anchor\+Item}!Anchor\+Item@{Anchor\+Item}}
+\index{Anchor\+Item@{Anchor\+Item}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{Anchor\+Item}]{\setlength{\rightskip}{0pt plus 5cm}Anchor\+Item\+::\+Anchor\+Item (
+\begin{DoxyParamCaption}
+\item[{Item\+Type}]{type, }
+\item[{int64\+\_\+t}]{timestamp, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{total\+Time, }
+\item[{unsigned long}]{frame\+Number, }
+\item[{unsigned long}]{frame\+Count, }
+\item[{Q\+Widget $\ast$}]{parent, }
+\item[{bool}]{is\+Set = {\ttfamily true}, }
+\item[{bool}]{display\+Time = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_a06c620842bbbe71cd1066f08a5000196}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em type} & Item type \\
+\hline
+{\em timestamp} & Timestamp \\
+\hline
+{\em time\+Position} & Time position \\
+\hline
+{\em total\+Time} & Total video time \\
+\hline
+{\em frame\+Number} & Fram number \\
+\hline
+{\em frame\+Count} & Number of frames in the video \\
+\hline
+{\em parent} & Parent widget \\
+\hline
+{\em is\+Set} & Is the item set? Works only with E\+N\+D Item\+Type \\
+\hline
+{\em display\+Time} & True -\/ display time. False -\/ display frame number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_aa53b59e4ced3b72ed61c28d467bf822f}{}\index{Anchor\+Item@{Anchor\+Item}!````~Anchor\+Item@{$\sim$\+Anchor\+Item}}
+\index{````~Anchor\+Item@{$\sim$\+Anchor\+Item}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{$\sim$\+Anchor\+Item}]{\setlength{\rightskip}{0pt plus 5cm}Anchor\+Item\+::$\sim$\+Anchor\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_aa53b59e4ced3b72ed61c28d467bf822f}
+Destructor 
+
+Definition at line 103 of file anchoritem.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAnchorItem_a4b9fb672e2ebc5289c116027dc8a383d}{}\index{Anchor\+Item@{Anchor\+Item}!display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}}
+\index{display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{display\+\_\+frame\+\_\+num}]{\setlength{\rightskip}{0pt plus 5cm}void Anchor\+Item\+::display\+\_\+frame\+\_\+num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_a4b9fb672e2ebc5289c116027dc8a383d}
+Displays values as frame numbers. 
+
+Definition at line 148 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_a3905061f30d8b6a77b00ad52311605af}{}\index{Anchor\+Item@{Anchor\+Item}!display\+\_\+time@{display\+\_\+time}}
+\index{display\+\_\+time@{display\+\_\+time}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{display\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}void Anchor\+Item\+::display\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_a3905061f30d8b6a77b00ad52311605af}
+Displays values as time positions. 
+
+Definition at line 138 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_a78686f7c51def036159b1dfe56be9b33}{}\index{Anchor\+Item@{Anchor\+Item}!event\+Filter@{event\+Filter}}
+\index{event\+Filter@{event\+Filter}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{event\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}bool Anchor\+Item\+::event\+Filter (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{object, }
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classAnchorItem_a78686f7c51def036159b1dfe56be9b33}
+Filters Enter and Leave events for item highlighting when hovering 
+\begin{DoxyParams}{Parameters}
+{\em object} & Object of the event \\
+\hline
+{\em event} & Event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False -\/ propagate event further. True -\/ do not propagate. 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_a3bdcec9b92921e16810b5251a5273afa}{}\index{Anchor\+Item@{Anchor\+Item}!get\+\_\+timestamp@{get\+\_\+timestamp}}
+\index{get\+\_\+timestamp@{get\+\_\+timestamp}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{get\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Anchor\+Item\+::get\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classAnchorItem_a3bdcec9b92921e16810b5251a5273afa}
+Returns timestamp. \begin{DoxyReturn}{Returns}
+timestamp
+\end{DoxyReturn}
+void \hyperlink{classAnchorItem_ae900d01f71ff480d4bbbfee8ef7fac80}{Anchor\+Item\+::set\+\_\+highlight(bool set)} \{ if (set) set\+Style\+Sheet(background\+Color\+Active); else set\+Style\+Sheet(background\+Color\+Inactive);
+
+\begin{DoxyVerb}QFont nameFont = name->font();
+nameFont.setUnderline(set);
+name->setFont(nameFont);
+\end{DoxyVerb}
+ \} 
+
+Definition at line 133 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_a3cb5fa754bc1bfd9bad4dd6e6ff22bb6}{}\index{Anchor\+Item@{Anchor\+Item}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{get\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}Item\+Type Anchor\+Item\+::get\+\_\+type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_a3cb5fa754bc1bfd9bad4dd6e6ff22bb6}
+Returns type of this item. \begin{DoxyReturn}{Returns}
+Item type 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_aff8a1bd4b6c6645fd1cec15ce4ba8474}{}\index{Anchor\+Item@{Anchor\+Item}!is\+\_\+set@{is\+\_\+set}}
+\index{is\+\_\+set@{is\+\_\+set}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{is\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}bool Anchor\+Item\+::is\+\_\+set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_aff8a1bd4b6c6645fd1cec15ce4ba8474}
+Is the object set? is\+Set works only with E\+N\+D Item\+Type. \begin{DoxyReturn}{Returns}
+is\+Set. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file anchoritem.\+cpp.
+
+\hypertarget{classAnchorItem_ae900d01f71ff480d4bbbfee8ef7fac80}{}\index{Anchor\+Item@{Anchor\+Item}!set\+\_\+highlight@{set\+\_\+highlight}}
+\index{set\+\_\+highlight@{set\+\_\+highlight}!Anchor\+Item@{Anchor\+Item}}
+\subsubsection[{set\+\_\+highlight}]{\setlength{\rightskip}{0pt plus 5cm}void Anchor\+Item\+::set\+\_\+highlight (
+\begin{DoxyParamCaption}
+\item[{bool}]{set}
+\end{DoxyParamCaption}
+)}\label{classAnchorItem_ae900d01f71ff480d4bbbfee8ef7fac80}
+Sets highlighting. Works with \hyperlink{classAnchorItem_a78686f7c51def036159b1dfe56be9b33}{event\+Filter()}. 
+\begin{DoxyParams}{Parameters}
+{\em set} & True -\/ highlight always on. False -\/ highlight set according item hover. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file anchoritem.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{anchoritem_8h}{anchoritem.\+h}\item 
+sources/\hyperlink{anchoritem_8cpp}{anchoritem.\+cpp}\end{DoxyCompactItemize}

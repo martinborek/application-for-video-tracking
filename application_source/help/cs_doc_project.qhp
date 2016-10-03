@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>fit.cz.videoanonymizer</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="Video Anonymizer">
+        <filterAttribute>videoanonymizer</filterAttribute>
+		<filterAttribute>cs</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>videoanonymizer</filterAttribute>
+		<filterAttribute>cs</filterAttribute>
+        <toc>
+            <section title="Otevření videa" ref="cs_doc.html#open_video"/>
+            <section title="Uložení videa" ref="cs_doc.html#save_video"/>
+            <section title="Otevření projektu" ref="cs_doc.html#open_project"/>
+            <section title="Uložení projektu" ref="cs_doc.html#save_project"/>
+            <section title="Přehrávání / Pozastavení videa" ref="cs_doc.html#play"/>
+            <section title="Zastavení videa" ref="cs_doc.html#stop"/>
+            <section title="Krokování videa" ref="cs_doc.html#stepping">
+                <section title="Krok vpřed" ref="cs_doc.html#step_forward"/>
+                <section title="Krok zpět" ref="cs_doc.html#step_back"/>
+            </section>
+            <section title="Změna rychlosti" ref="cs_doc.html#speed">
+                <section title="Rychleji" ref="cs_doc.html#faster"/>
+                <section title="Pomaleji" ref="cs_doc.html#slower"/>
+                <section title="Skutečná rychlost" ref="cs_doc.html#original_speed"/>
+            </section>
+            <section title="Sledování nového objektu" ref="cs_doc.html#track_object"/>
+            <section title="Výběr objektu" ref="cs_doc.html#selection"/>
+            <section title="Přejmenování objektu" ref="cs_doc.html#rename_object"/>
+            <section title="Odstranění objektu" ref="cs_doc.html#delete_object"/>
+            <section title="Nastavení vzhledu objektu" ref="cs_doc.html#appearance">
+                <section title="Rozostření nebo barva" ref="cs_doc.html#defocus_color"/>
+                <section title="Velikost rozostření" ref="cs_doc.html#defocus"/>
+                <section title="Výběr tvaru" ref="cs_doc.html#shape"/>
+                <section title="Vyplnění objektu" ref="cs_doc.html#fill"/>
+                <section title="Nakreslit okraj" ref="cs_doc.html#border"/>
+                <section title="Výběr vlastní barvy" ref="cs_doc.html#custom_color"/>
+            </section>
+            <section title="Klíčové body" ref="cs_doc.html#key_points"/>
+            <section title="Změna trajektorie" ref="cs_doc.html#trajectory_change"/>
+            <section title="Změna počáteční pozice sledování" ref="cs_doc.html#initial_position"/>
+            <section title="Nastavení konce sledování objektu" ref="cs_doc.html#end_position"/>
+            <section title="Nastavení sledování do konce videa" ref="cs_doc.html#last_frame"/>
+            <section title="Průběžné vypočítávání trajektorie" ref="cs_doc.html#compute_trajectory_partial"/>
+            <section title="Zobrazit trajektorii" ref="cs_doc.html#trajectory"/>
+            <section title="Vypočítání trajektorie" ref="cs_doc.html#compute_trajectory"/>
+            <section title="Zobrazovat originální video" ref="cs_doc.html#original_video"/>
+            <section title="Zobrazovat časové údaje" ref="cs_doc.html#time_values"/>
+            <section title="Zobrazovat čísla snímků" ref="cs_doc.html#frame_numbers"/>
+            <section title="Změna jazyka" ref="cs_doc.html#language"/>
+        </toc>
+        <keywords>
+            <keyword name="otevřít video"  ref="cs_doc.html#open_video"/>
+            <keyword name="načíst video"  ref="cs_doc.html#open_video"/>
+
+            <keyword name="uložit video"  ref="cs_doc.html#save_video"/>
+            <keyword name="výstup"  ref="cs_doc.html#save_video"/>
+            <keyword name="vytvořit výstupní video"  ref="cs_doc.html#save_video"/>
+            <keyword name="uložit výstupní video"  ref="cs_doc.html#save_video"/>
+
+            <keyword name="projekt"  ref="cs_doc.html#open_project"/>
+            <keyword name="otevřít projekt"  ref="cs_doc.html#open_project"/>
+            <keyword name="načíst projekt"  ref="cs_doc.html#open_project"/>
+            <keyword name="XML"  ref="cs_doc.html#open_project"/>
+            <keyword name="JSON"  ref="cs_doc.html#open_project"/>
+            <keyword name="rozpracovaný projekt"  ref="cs_doc.html#open_project"/>
+
+            <keyword name="uložit projekt"  ref="cs_doc.html#save_project"/>
+
+            <keyword name="přehrát video"  ref="cs_doc.html#play"/>
+            <keyword name="spustit video"  ref="cs_doc.html#play"/>
+            <keyword name="přehrávat"  ref="cs_doc.html#play"/>
+            <keyword name="pozastavit"  ref="cs_doc.html#play"/>
+            <keyword name="pauza"  ref="cs_doc.html#play"/>
+            
+            <keyword name="stop"  ref="cs_doc.html#stop"/>
+            <keyword name="zastavit"  ref="cs_doc.html#stop"/>
+            <keyword name="zastavení videa"  ref="cs_doc.html#stop"/>
+
+            <keyword name="krokování videa"  ref="cs_doc.html#stepping"/>
+            <keyword name="posunování"  ref="cs_doc.html#stepping"/>
+
+            <keyword name="krokování vpřed"  ref="cs_doc.html#step_forward"/>
+            <keyword name="krok vpřed"  ref="cs_doc.html#step_forward"/>
+            <keyword name="následující snímek"  ref="cs_doc.html#step_forward"/>
+
+            <keyword name="krokování zpět"  ref="cs_doc.html#step_back"/>
+            <keyword name="krok zpět"  ref="cs_doc.html#step_back"/>
+            <keyword name="předchozí snímek"  ref="cs_doc.html#step_back"/>
+            
+            <keyword name="rychlost přehrávání"  ref="cs_doc.html#speed"/>
+            <keyword name="změna rychlosti"  ref="cs_doc.html#speed"/>
+
+            <keyword name="rychleji"  ref="cs_doc.html#faster"/>
+            <keyword name="přehrávat rychleji"  ref="cs_doc.html#faster"/>
+
+            <keyword name="pomaleji"  ref="cs_doc.html#slower"/>
+            <keyword name="přehrávat pomaleji"  ref="cs_doc.html#slower"/>
+
+            <keyword name="skutečná rychlost"  ref="cs_doc.html#original_speed"/>
+            <keyword name="originální rychlost"  ref="cs_doc.html#original_speed"/>
+            <keyword name="přehrávat normálně"  ref="cs_doc.html#original_speed"/>
+            <keyword name="původní rychlost"  ref="cs_doc.html#original_speed"/>
+
+            <keyword name="sledování nového objektu"  ref="cs_doc.html#track_object"/>
+            <keyword name="nový objekt"  ref="cs_doc.html#track_object"/>
+            <keyword name="sledovat objekt"  ref="cs_doc.html#track_object"/>
+            <keyword name="přidat objekt"  ref="cs_doc.html#track_object"/>
+
+            <keyword name="výběr objektu"  ref="cs_doc.html#selection"/>
+            <keyword name="vybrat objekt"  ref="cs_doc.html#selection"/>
+            <keyword name="selekce"  ref="cs_doc.html#selection"/>
+            <keyword name="označení"  ref="cs_doc.html#selection"/>
+
+            <keyword name="přejmenovat objekt"  ref="cs_doc.html#rename_object"/>
+            <keyword name="přejmenování objektu"  ref="cs_doc.html#rename_object"/>
+            <keyword name="nové jméno"  ref="cs_doc.html#rename_object"/>
+            <keyword name="změnit jméno"  ref="cs_doc.html#rename_object"/>
+            
+            <keyword name="odstranit objekt"  ref="cs_doc.html#delete_object"/>
+            <keyword name="smazat objekt"  ref="cs_doc.html#delete_object"/>
+            <keyword name="zrušit objekt"  ref="cs_doc.html#delete_object"/>
+
+            <keyword name="vzhled objektu"  ref="cs_doc.html#appearance"/>
+            <keyword name="nastavení vzhledu objektu"  ref="cs_doc.html#appearance"/>
+            <keyword name="upravit vzhled objektu"  ref="cs_doc.html#appearance"/>
+			
+            <keyword name="rozostřit"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="barva"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="rozkostičkovat"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="rozmazat"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="okraj"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="vyplnit"  ref="cs_doc.html#defocus_color"/>
+            <keyword name="anonymizace"  ref="cs_doc.html#defocus_color"/>
+
+            <keyword name="velikost rozostření"  ref="cs_doc.html#defocus"/>
+            <keyword name="velikost čtverce"  ref="cs_doc.html#defocus"/>
+
+            <keyword name="tvar"  ref="cs_doc.html#shape"/>
+            <keyword name="výběr tvaru"  ref="cs_doc.html#shape"/>
+
+            <keyword name="vyplnění objektu"  ref="cs_doc.html#fill"/>
+            <keyword name="vyplnit objekt"  ref="cs_doc.html#fill"/>
+
+            <keyword name="barva okraje"  ref="cs_doc.html#border"/>
+            <keyword name="tloušťka okraje"  ref="cs_doc.html#border"/>
+            <keyword name="nakreslit okraj"  ref="cs_doc.html#border"/>
+
+            <keyword name="vlastní barva"  ref="cs_doc.html#custom_color"/>
+            <keyword name="výběr vlastní barvy"  ref="cs_doc.html#custom_color"/>
+            <keyword name="vybrat vlastní barvu"  ref="cs_doc.html#custom_color"/>
+            <keyword name="zvolit vlastní barvu"  ref="cs_doc.html#custom_color"/>
+
+            <keyword name="klíčové body"  ref="cs_doc.html#key_points"/>
+            <keyword name="začátek"  ref="cs_doc.html#key_points"/>
+            <keyword name="konec"  ref="cs_doc.html#key_points"/>
+            <keyword name="změna trajektorie"  ref="cs_doc.html#key_points"/>
+
+            <keyword name="změnit trajektorii"  ref="cs_doc.html#trajectory_change"/>
+            <keyword name="upravit trajektorii"  ref="cs_doc.html#trajectory_change"/>
+            <keyword name="přidat změnu trajektorie"  ref="cs_doc.html#trajectory_change"/>
+            <keyword name="počáteční pozice"  ref="cs_doc.html#initial_position"/>
+            <keyword name="počátek"  ref="cs_doc.html#initial_position"/>
+            <keyword name="změna začátku"  ref="cs_doc.html#initial_position"/>
+            <keyword name="upravit začátek"  ref="cs_doc.html#initial_position"/>
+            <keyword name="změnit pozici"  ref="cs_doc.html#initial_position"/>
+
+            <keyword name="upravit konec"  ref="cs_doc.html#end_position"/>
+            <keyword name="nastavit konec sledování"  ref="cs_doc.html#end_position"/>
+            <keyword name="změnit poslední snímek"  ref="cs_doc.html#end_position"/>
+
+            <keyword name="nastavit sledování do konce videa"  ref="cs_doc.html#last_frame"/>
+            <keyword name="konec videa"  ref="cs_doc.html#last_frame"/>
+            <keyword name="sledování do konce videa"  ref="cs_doc.html#last_frame"/>
+
+            <keyword name="vypočítávání trajektorie"  ref="cs_doc.html#compute_trajectory_partial"/>
+            <keyword name="průběžné vypočítávání trajektorie"  ref="cs_doc.html#compute_trajectory_partial"/>
+            <keyword name="automatické vypočítávání trajektorie"  ref="cs_doc.html#compute_trajectory_partial"/>
+
+            <keyword name="zobrazit trajektorii"  ref="cs_doc.html#trajectory"/>
+            <keyword name="trajektorie"  ref="cs_doc.html#trajectory"/>
+            <keyword name="šířka"  ref="cs_doc.html#trajectory"/>
+            <keyword name="výška"  ref="cs_doc.html#trajectory"/>
+            <keyword name="pozice"  ref="cs_doc.html#trajectory"/>
+            <keyword name="snímek"  ref="cs_doc.html#trajectory"/>
+
+            <keyword name="vypočítat trajektorii"  ref="cs_doc.html#compute_trajectory"/>
+            
+            <keyword name="originální video"  ref="cs_doc.html#original_video"/>
+            <keyword name="původní video"  ref="cs_doc.html#original_video"/>
+            <keyword name="zobrazit originální video"  ref="cs_doc.html#original_video"/>
+
+            <keyword name="časové údaje"  ref="cs_doc.html#time_values"/>
+            <keyword name="zobrazit časové údaje"  ref="cs_doc.html#time_values"/>
+
+            <keyword name="čísla snímků"  ref="cs_doc.html#frame_numbers"/>
+            <keyword name="zobrazit čísla snímků"  ref="cs_doc.html#frame_numbers"/>
+
+            <keyword name="jazyk"  ref="cs_doc.html#language"/>
+            <keyword name="změnit jazyk"  ref="cs_doc.html#language"/>
+            <keyword name="nastavit jazyk"  ref="cs_doc.html#language"/>
+            <keyword name="language"  ref="cs_doc.html#language"/>
+            <keyword name="angličtina"  ref="cs_doc.html#language"/>
+            <keyword name="english"  ref="cs_doc.html#language"/>
+            <keyword name="čeština"  ref="cs_doc.html#language"/>
+        </keywords>
+        <files>
+            <file>*.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

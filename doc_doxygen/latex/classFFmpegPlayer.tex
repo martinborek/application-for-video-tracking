@@ -1,0 +1,364 @@
+\hypertarget{classFFmpegPlayer}{}\section{F\+Fmpeg\+Player Class Reference}
+\label{classFFmpegPlayer}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFFmpegPlayer_ab51ec3c9c3d40680a69b02bda9767341}{F\+Fmpeg\+Player} (std\+::string video\+Addr, Q\+Progress\+Dialog const $\ast$progress\+Dialog)
+\item 
+\hyperlink{classFFmpegPlayer_ab6aa2a58362cee1c23d90bfa84164205}{$\sim$\+F\+Fmpeg\+Player} ()
+\item 
+double \hyperlink{classFFmpegPlayer_a2cdc53e1813de0723f2bfe869f0ad504}{get\+\_\+fps} () const 
+\item 
+unsigned long \hyperlink{classFFmpegPlayer_afb2c1a93fd9cc360340ff989b41500bd}{get\+\_\+frame\+\_\+count} () const 
+\item 
+unsigned long \hyperlink{classFFmpegPlayer_a2f71f53316479782cb09f78f1383380b}{get\+\_\+total\+\_\+time} () const 
+\item 
+unsigned int \hyperlink{classFFmpegPlayer_acfbe5305c4e30623ecc791519e2625d0}{get\+\_\+height} () const 
+\item 
+unsigned int \hyperlink{classFFmpegPlayer_a52cc701b9fdf9882a65be3f979f8d5a7}{get\+\_\+width} () const 
+\item 
+A\+V\+Stream const $\ast$ \hyperlink{classFFmpegPlayer_a5ed6acba145aeb2a63626f6008b2b56e}{get\+\_\+video\+\_\+stream} ()
+\item 
+A\+V\+Stream const $\ast$ \hyperlink{classFFmpegPlayer_a134ebdd27b8edf065fcd3e825ec5e114}{get\+\_\+audio\+\_\+stream} ()
+\item 
+bool \hyperlink{classFFmpegPlayer_a7f14f3411a6f959f3e796d713de1b056}{get\+\_\+frame\+\_\+by\+\_\+time} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$result\+Frame, unsigned long time)
+\item 
+bool \hyperlink{classFFmpegPlayer_a4561d19e9d7b0820c202037d754bb049}{get\+\_\+frame\+\_\+by\+\_\+timestamp} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$result\+Frame, int64\+\_\+t timestamp)
+\item 
+bool \hyperlink{classFFmpegPlayer_a7ba674baeb349fd6cba4514993abd745}{get\+\_\+frame\+\_\+by\+\_\+number} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$result\+Frame, unsigned long frame\+Number)
+\item 
+bool \hyperlink{classFFmpegPlayer_a448e643bcbb4583bdad3ba9b5f615ee4}{get\+\_\+next\+\_\+frame} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$result\+Frame)
+\item 
+bool \hyperlink{classFFmpegPlayer_a9bf7b16453ba472819723f1f1c8a80bd}{get\+\_\+previous\+\_\+frame} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$result\+Frame)
+\item 
+bool \hyperlink{classFFmpegPlayer_a5218c55d82306ac58df1667579878f74}{read\+\_\+frame} (A\+V\+Packet \&packet, bool only\+Video\+Packets=true, bool $\ast$is\+Audio=nullptr)
+\item 
+bool \hyperlink{classFFmpegPlayer_a4c70bf1467385856982f391158de3e49}{get\+\_\+current\+\_\+frame} (\hyperlink{classVideoFrame}{Video\+Frame} $\ast$frame)
+\item 
+bool \hyperlink{classFFmpegPlayer_a03a7bcc6b81e74ad9d40346c8d267422}{seek\+\_\+first\+\_\+packet} ()
+\item 
+const char $\ast$ \hyperlink{classFFmpegPlayer_a8dc7287f8ab038a1d1e78de2b6345ece}{get\+\_\+format\+\_\+name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file ffmpegplayer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFFmpegPlayer_ab51ec3c9c3d40680a69b02bda9767341}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{F\+Fmpeg\+Player}]{\setlength{\rightskip}{0pt plus 5cm}F\+Fmpeg\+Player\+::\+F\+Fmpeg\+Player (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{video\+Addr, }
+\item[{Q\+Progress\+Dialog const $\ast$}]{progress\+Dialog}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_ab51ec3c9c3d40680a69b02bda9767341}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em video\+Addr} & Path to a video file \\
+\hline
+{\em progress\+Dialog} & Q\+T progress dialog for displaying information about video opening \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_ab6aa2a58362cee1c23d90bfa84164205}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!````~F\+Fmpeg\+Player@{$\sim$\+F\+Fmpeg\+Player}}
+\index{````~F\+Fmpeg\+Player@{$\sim$\+F\+Fmpeg\+Player}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{$\sim$\+F\+Fmpeg\+Player}]{\setlength{\rightskip}{0pt plus 5cm}F\+Fmpeg\+Player\+::$\sim$\+F\+Fmpeg\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_ab6aa2a58362cee1c23d90bfa84164205}
+Destructor 
+
+Definition at line 124 of file ffmpegplayer.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFFmpegPlayer_a134ebdd27b8edf065fcd3e825ec5e114}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+audio\+\_\+stream@{get\+\_\+audio\+\_\+stream}}
+\index{get\+\_\+audio\+\_\+stream@{get\+\_\+audio\+\_\+stream}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+audio\+\_\+stream}]{\setlength{\rightskip}{0pt plus 5cm}const A\+V\+Stream $\ast$ F\+Fmpeg\+Player\+::get\+\_\+audio\+\_\+stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a134ebdd27b8edf065fcd3e825ec5e114}
+Returns information about the input audio stream. \begin{DoxyReturn}{Returns}
+Input audio stream 
+\end{DoxyReturn}
+
+
+Definition at line 247 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a4c70bf1467385856982f391158de3e49}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+current\+\_\+frame@{get\+\_\+current\+\_\+frame}}
+\index{get\+\_\+current\+\_\+frame@{get\+\_\+current\+\_\+frame}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+current\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+current\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{frame}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a4c70bf1467385856982f391158de3e49}
+Returns the current frame that has already been read. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Read frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful
+\end{DoxyReturn}
+unsigned long F\+Fmpeg\+Player\+::get\+\_\+time\+\_\+position() const \{ video\+Context-\/$>$ticks\+\_\+per\+\_\+frame; return av\+\_\+rescale\+\_\+q(get\+\_\+frame\+\_\+timestamp(), time\+Base, A\+V\+Rational\{1, V\+I\+D\+E\+O\+T\+R\+A\+C\+K\+I\+N\+G\+\_\+\+M\+S2\+D\+U\+R\+A\+T\+I\+O\+N\}); \} 
+
+Definition at line 275 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a8dc7287f8ab038a1d1e78de2b6345ece}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+format\+\_\+name@{get\+\_\+format\+\_\+name}}
+\index{get\+\_\+format\+\_\+name@{get\+\_\+format\+\_\+name}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+format\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}char const $\ast$ F\+Fmpeg\+Player\+::get\+\_\+format\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a8dc7287f8ab038a1d1e78de2b6345ece}
+Returns the input file format name. \begin{DoxyReturn}{Returns}
+File format name 
+\end{DoxyReturn}
+
+
+Definition at line 501 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a2cdc53e1813de0723f2bfe869f0ad504}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+fps@{get\+\_\+fps}}
+\index{get\+\_\+fps@{get\+\_\+fps}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+fps}]{\setlength{\rightskip}{0pt plus 5cm}double F\+Fmpeg\+Player\+::get\+\_\+fps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classFFmpegPlayer_a2cdc53e1813de0723f2bfe869f0ad504}
+Returns information about frames per second. \begin{DoxyReturn}{Returns}
+Frames per second 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a7ba674baeb349fd6cba4514993abd745}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+frame\+\_\+by\+\_\+number@{get\+\_\+frame\+\_\+by\+\_\+number}}
+\index{get\+\_\+frame\+\_\+by\+\_\+number@{get\+\_\+frame\+\_\+by\+\_\+number}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+frame\+\_\+by\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{result\+Frame, }
+\item[{unsigned long}]{frame\+Number}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a7ba674baeb349fd6cba4514993abd745}
+Reads a frame by its number (index) and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em result\+Frame} & Read frame \\
+\hline
+{\em frame\+Number} & Frame number (index) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 365 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a7f14f3411a6f959f3e796d713de1b056}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+frame\+\_\+by\+\_\+time@{get\+\_\+frame\+\_\+by\+\_\+time}}
+\index{get\+\_\+frame\+\_\+by\+\_\+time@{get\+\_\+frame\+\_\+by\+\_\+time}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+frame\+\_\+by\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{result\+Frame, }
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a7f14f3411a6f959f3e796d713de1b056}
+Reads a frame by its time position and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em result\+Frame} & Read frame \\
+\hline
+{\em time} & Time position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 296 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a4561d19e9d7b0820c202037d754bb049}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+frame\+\_\+by\+\_\+timestamp@{get\+\_\+frame\+\_\+by\+\_\+timestamp}}
+\index{get\+\_\+frame\+\_\+by\+\_\+timestamp@{get\+\_\+frame\+\_\+by\+\_\+timestamp}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+frame\+\_\+by\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+frame\+\_\+by\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{result\+Frame, }
+\item[{int64\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a4561d19e9d7b0820c202037d754bb049}
+Reads a frame by its timestamp and returns it. 
+\begin{DoxyParams}{Parameters}
+{\em result\+Frame} & Read frame \\
+\hline
+{\em timestamp} & Timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful
+\end{DoxyReturn}
+exact\+Position -\/ if frame with the exact timestamp does not exist, return false; only\+Key\+Frames -\/ Seek only to keyframes -\/ faster; 
+
+Definition at line 313 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_afb2c1a93fd9cc360340ff989b41500bd}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+frame\+\_\+count@{get\+\_\+frame\+\_\+count}}
+\index{get\+\_\+frame\+\_\+count@{get\+\_\+frame\+\_\+count}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+frame\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long F\+Fmpeg\+Player\+::get\+\_\+frame\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classFFmpegPlayer_afb2c1a93fd9cc360340ff989b41500bd}
+Returns information about number of frames. \begin{DoxyReturn}{Returns}
+Number of frames 
+\end{DoxyReturn}
+
+
+Definition at line 214 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_acfbe5305c4e30623ecc791519e2625d0}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+height@{get\+\_\+height}}
+\index{get\+\_\+height@{get\+\_\+height}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int F\+Fmpeg\+Player\+::get\+\_\+height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classFFmpegPlayer_acfbe5305c4e30623ecc791519e2625d0}
+Returns information about video height. \begin{DoxyReturn}{Returns}
+Video height 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a448e643bcbb4583bdad3ba9b5f615ee4}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+next\+\_\+frame@{get\+\_\+next\+\_\+frame}}
+\index{get\+\_\+next\+\_\+frame@{get\+\_\+next\+\_\+frame}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+next\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+next\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{result\+Frame}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a448e643bcbb4583bdad3ba9b5f615ee4}
+Reads a frame following to the current one returns it. 
+\begin{DoxyParams}{Parameters}
+{\em result\+Frame} & Read frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 373 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a9bf7b16453ba472819723f1f1c8a80bd}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+previous\+\_\+frame@{get\+\_\+previous\+\_\+frame}}
+\index{get\+\_\+previous\+\_\+frame@{get\+\_\+previous\+\_\+frame}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+previous\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::get\+\_\+previous\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Frame} $\ast$}]{result\+Frame}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a9bf7b16453ba472819723f1f1c8a80bd}
+Reads a frame preceding to the current one returns it. 
+\begin{DoxyParams}{Parameters}
+{\em result\+Frame} & Read frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 387 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a2f71f53316479782cb09f78f1383380b}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}}
+\index{get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+total\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long F\+Fmpeg\+Player\+::get\+\_\+total\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classFFmpegPlayer_a2f71f53316479782cb09f78f1383380b}
+Returns information about video length. \begin{DoxyReturn}{Returns}
+Video length in milliseconds 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a5ed6acba145aeb2a63626f6008b2b56e}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+video\+\_\+stream@{get\+\_\+video\+\_\+stream}}
+\index{get\+\_\+video\+\_\+stream@{get\+\_\+video\+\_\+stream}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+video\+\_\+stream}]{\setlength{\rightskip}{0pt plus 5cm}const A\+V\+Stream $\ast$ F\+Fmpeg\+Player\+::get\+\_\+video\+\_\+stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a5ed6acba145aeb2a63626f6008b2b56e}
+Returns information about the input video stream. \begin{DoxyReturn}{Returns}
+Input video stream 
+\end{DoxyReturn}
+
+
+Definition at line 240 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a52cc701b9fdf9882a65be3f979f8d5a7}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!get\+\_\+width@{get\+\_\+width}}
+\index{get\+\_\+width@{get\+\_\+width}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{get\+\_\+width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int F\+Fmpeg\+Player\+::get\+\_\+width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classFFmpegPlayer_a52cc701b9fdf9882a65be3f979f8d5a7}
+Returns information about video width. \begin{DoxyReturn}{Returns}
+Video width 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a5218c55d82306ac58df1667579878f74}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!read\+\_\+frame@{read\+\_\+frame}}
+\index{read\+\_\+frame@{read\+\_\+frame}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{read\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::read\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{A\+V\+Packet \&}]{packet, }
+\item[{bool}]{only\+Video\+Packets = {\ttfamily true}, }
+\item[{bool $\ast$}]{is\+Audio = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a5218c55d82306ac58df1667579878f74}
+Reads a new frame from the input video stream. The new frame is stored in result\+Frame. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & Packet structure for storing the read packet; It is also used for returning audio packets \\
+\hline
+{\em only\+Video\+Packets} & If false -\/ audio packets are read as well as video packets. If true -\/ only video packets are read. \\
+\hline
+{\em is\+Audio} & Is set to true if the function returned an audio packet in A\+V\+Packet \&packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 406 of file ffmpegplayer.\+cpp.
+
+\hypertarget{classFFmpegPlayer_a03a7bcc6b81e74ad9d40346c8d267422}{}\index{F\+Fmpeg\+Player@{F\+Fmpeg\+Player}!seek\+\_\+first\+\_\+packet@{seek\+\_\+first\+\_\+packet}}
+\index{seek\+\_\+first\+\_\+packet@{seek\+\_\+first\+\_\+packet}!F\+Fmpeg\+Player@{F\+Fmpeg\+Player}}
+\subsubsection[{seek\+\_\+first\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+Fmpeg\+Player\+::seek\+\_\+first\+\_\+packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFFmpegPlayer_a03a7bcc6b81e74ad9d40346c8d267422}
+Rewinds the video to its beginning by seeking its first packet. \begin{DoxyReturn}{Returns}
+True if successful 
+\end{DoxyReturn}
+
+
+Definition at line 483 of file ffmpegplayer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{ffmpegplayer_8h}{ffmpegplayer.\+h}\item 
+sources/\hyperlink{ffmpegplayer_8cpp}{ffmpegplayer.\+cpp}\end{DoxyCompactItemize}

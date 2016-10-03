@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{real_time_tracking}
+Lucas~P.J.J. Noldus, Andrew~J. Spink, and Ruud~A.J. Tegelenbosch.
+\newblock Ethovision: A versatile video tracking system for automation of
+  behavioral experiments.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers},
+  33(3):398--414, 2001.
+\newblock ISSN~0743-3808.
+
+\bibitem{opencv_essentials}
+O.D. Suarez, M.M.F. Carrobles, N.V. Enano, G.B. Garc{\'\i}a, I.S. Gracia,
+  J.A.P. Incertis, and J.S. Tercero.
+\newblock {\em OpenCV Essentials}.
+\newblock Packt Publishing, 2014.
+\newblock ISBN~9781783984251.
+
+\bibitem{ffmpeg_basics}
+F.~Korbel.
+\newblock {\em FFmpeg Basics: Multimedia Handling with a Fast Audio and Video
+  Encoder}.
+\newblock CreateSpace Independent Publishing Platform, 2012.
+\newblock ISBN~9781479327836.
+
+\bibitem{compression_techniques}
+J.~Mukhopadhyay.
+\newblock {\em Image and Video Processing in the Compressed Domain}.
+\newblock CRC Press, 2011.
+\newblock ISBN~9781439829363.
+
+\bibitem{mpeg_timestamps}
+J.~Watkinson.
+\newblock {\em The MPEG Handbook}.
+\newblock Taylor \& Francis, 2012.
+\newblock ISBN~9781136028977.
+
+\bibitem{ffmpeg_dranger}
+M.~Bohme.
+\newblock An ffmpeg and sdl tutorial.
+\newblock \textit{\url{http://dranger.com/ffmpeg/tutorial01.html}}, 2003.
+
+\bibitem{particle_tracking}
+N.~Seo.
+\newblock Object tracking using particle filtering.
+\newblock \textit{\url{https://code.google.com/p/opencvx/wiki/ParticleFilter}},
+  2010.
+
+\bibitem{algorithm_thesis}
+P.~Betko.
+\newblock Object tracking in video.
+\newblock
+  \textit{\url{https://www.vutbr.cz/en/studies/final-thesis?zp_id=34625}},
+  2010.
+
+\bibitem{qt_programming}
+J.~Blanchette and M.~Summerfield.
+\newblock {\em C++ GUI Programming with Qt4}.
+\newblock Pearson Education, 2008.
+\newblock ISBN~9780132703000.
+
+\bibitem{cereal}
+S.~Grant and R.~Voorhies.
+\newblock cereal - a c++11 library for serialization.
+\newblock \textit{\url{http://uscilab.github.io/cereal/index.html}}, 2015.
+
+\bibitem{walletfox_help}
+How to implement help for a qt application using qhelpengine.
+\newblock
+  \textit{\url{http://www.walletfox.com/course/qhelpengineexample.php}}, 2014.
+
+\bibitem{usability_handbook}
+J.~Rubin, D.~Chisnell, and J.~Spool.
+\newblock {\em Handbook of Usability Testing: How to Plan, Design, and Conduct
+  Effective Tests}.
+\newblock Wiley, 2011.
+\newblock ISBN~9781118080405.
+
+\end{thebibliography}

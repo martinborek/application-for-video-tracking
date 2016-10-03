@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>fit.cz.videoanonymizer</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="Video Anonymizer">
+        <filterAttribute>videoanonymizer</filterAttribute>
+        <filterAttribute>en</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>videoanonymizer</filterAttribute>
+        <filterAttribute>en</filterAttribute>
+        <toc>
+            <section title="Open video" ref="en_doc.html#open_video"/>
+            <section title="Save video" ref="en_doc.html#save_video"/>
+            <section title="Open project" ref="en_doc.html#open_project"/>
+            <section title="Save project" ref="en_doc.html#save_project"/>
+            <section title="Play / Pause video" ref="en_doc.html#play"/>
+            <section title="Stop video" ref="en_doc.html#stop"/>
+            <section title="Video stepping" ref="en_doc.html#stepping">
+                <section title="Step forward" ref="en_doc.html#step_forward"/>
+                <section title="Step back" ref="en_doc.html#step_back"/>
+            </section>
+            <section title="Change playback speed" ref="en_doc.html#speed">
+                <section title="Faster" ref="en_doc.html#faster"/>
+                <section title="Slower" ref="en_doc.html#slower"/>
+                <section title="Original speed" ref="en_doc.html#original_speed"/>
+            </section>
+            <section title="Track a new object" ref="en_doc.html#track_object"/>
+            <section title="Object selection" ref="en_doc.html#selection"/>
+            <section title="Rename an object" ref="en_doc.html#rename_object"/>
+            <section title="Remove an object" ref="en_doc.html#delete_object"/>
+            <section title="Change object appearance" ref="en_doc.html#appearance">
+                <section title="Defocus or color" ref="en_doc.html#defocus_color"/>
+                <section title="Defocus size" ref="en_doc.html#defocus"/>
+                <section title="Shape selection" ref="en_doc.html#shape"/>
+                <section title="Fill an object" ref="en_doc.html#fill"/>
+                <section title="Draw a border" ref="en_doc.html#border"/>
+                <section title="Select a custom color" ref="en_doc.html#custom_color"/>
+            </section>
+            <section title="Key points" ref="en_doc.html#key_points"/>
+            <section title="Change a trajectory" ref="en_doc.html#trajectory_change"/>
+            <section title="Change the initial position of tracking" ref="en_doc.html#initial_position"/>
+            <section title="Set the end of tracking" ref="en_doc.html#end_position"/>
+            <section title="Set tracking till the end of the video" ref="en_doc.html#last_frame"/>
+            <section title="Partial trajectory computing" ref="en_doc.html#compute_trajectory_partial"/>
+            <section title="Show a trajectory" ref="en_doc.html#trajectory"/>
+            <section title="Compute a trajectory" ref="en_doc.html#compute_trajectory"/>
+            <section title="Show original video" ref="en_doc.html#original_video"/>
+            <section title="Show time values" ref="en_doc.html#time_values"/>
+            <section title="Show frame numbers" ref="en_doc.html#frame_numbers"/>
+            <section title="Change language" ref="en_doc.html#language"/>
+        </toc>
+        <keywords>
+            <keyword name="open video"  ref="en_doc.html#open_video"/>
+            <keyword name="load video"  ref="en_doc.html#open_video"/>
+
+            <keyword name="save video"  ref="en_doc.html#save_video"/>
+            <keyword name="output"  ref="en_doc.html#save_video"/>
+            <keyword name="save output video"  ref="en_doc.html#save_video"/>
+            <keyword name="create output video"  ref="en_doc.html#save_video"/>
+            <keyword name="create video"  ref="en_doc.html#save_video"/>
+
+            <keyword name="project"  ref="en_doc.html#open_project"/>
+            <keyword name="open project"  ref="en_doc.html#open_project"/>
+            <keyword name="load project"  ref="en_doc.html#open_project"/>
+            <keyword name="XML"  ref="en_doc.html#open_project"/>
+            <keyword name="JSON"  ref="en_doc.html#open_project"/>
+            <keyword name="unfinished project"  ref="en_doc.html#open_project"/>
+
+            <keyword name="save project"  ref="en_doc.html#save_project"/>
+
+            <keyword name="play video"  ref="en_doc.html#play"/>
+            <keyword name="play"  ref="en_doc.html#play"/>
+            <keyword name="pause"  ref="en_doc.html#play"/>
+            <keyword name="pause video"  ref="en_doc.html#play"/>
+            
+            <keyword name="stop"  ref="en_doc.html#stop"/>
+            <keyword name="stop video"  ref="en_doc.html#stop"/>
+
+            <keyword name="video stepping"  ref="en_doc.html#stepping"/>
+            <keyword name="stepping"  ref="en_doc.html#stepping"/>
+
+            <keyword name="step forward"  ref="en_doc.html#step_forward"/>
+            <keyword name="forward"  ref="en_doc.html#step_forward"/>
+            <keyword name="next frame"  ref="en_doc.html#step_forward"/>
+
+            <keyword name="step back"  ref="en_doc.html#step_back"/>
+            <keyword name="backward"  ref="en_doc.html#step_back"/>
+            <keyword name="previous frame"  ref="en_doc.html#step_back"/>
+            
+            <keyword name="playback speed"  ref="en_doc.html#speed"/>
+            <keyword name="speed"  ref="en_doc.html#speed"/>
+            <keyword name="change speed"  ref="en_doc.html#speed"/>
+
+            <keyword name="faster"  ref="en_doc.html#faster"/>
+            <keyword name="play faster"  ref="en_doc.html#faster"/>
+
+            <keyword name="slower"  ref="en_doc.html#slower"/>
+            <keyword name="play slower"  ref="en_doc.html#slower"/>
+
+            <keyword name="original speed"  ref="en_doc.html#original_speed"/>
+
+            <keyword name="new object"  ref="en_doc.html#track_object"/>
+            <keyword name="track new object"  ref="en_doc.html#track_object"/>
+            <keyword name="add object"  ref="en_doc.html#track_object"/>
+            <keyword name="tracking"  ref="en_doc.html#track_object"/>
+
+            <keyword name="object selection"  ref="en_doc.html#selection"/>
+            <keyword name="select object"  ref="en_doc.html#selection"/>
+            <keyword name="selection"  ref="en_doc.html#selection"/>
+
+            <keyword name="rename object"  ref="en_doc.html#rename_object"/>
+            <keyword name="new name"  ref="en_doc.html#rename_object"/>
+            <keyword name="change name"  ref="en_doc.html#rename_object"/>
+            
+            <keyword name="remove object"  ref="en_doc.html#delete_object"/>
+            <keyword name="delete object"  ref="en_doc.html#delete_object"/>
+            <keyword name="discard object"  ref="en_doc.html#delete_object"/>
+
+            <keyword name="object appearance"  ref="en_doc.html#appearance"/>
+            <keyword name="set object appearance"  ref="en_doc.html#appearance"/>
+            <keyword name="change object appearance"  ref="en_doc.html#appearance"/>
+            <keyword name="appearance"  ref="en_doc.html#appearance"/>
+			
+            <keyword name="defocus"  ref="en_doc.html#defocus_color"/>
+            <keyword name="color"  ref="en_doc.html#defocus_color"/>
+            <keyword name="border"  ref="en_doc.html#defocus_color"/>
+            <keyword name="fill"  ref="en_doc.html#defocus_color"/>
+            <keyword name="anonymizer"  ref="en_doc.html#defocus_color"/>
+
+            <keyword name="defocus size"  ref="en_doc.html#defocus"/>
+            <keyword name="square size"  ref="en_doc.html#defocus"/>
+
+            <keyword name="shape"  ref="en_doc.html#shape"/>
+            <keyword name="shape selection"  ref="en_doc.html#shape"/>
+
+            <keyword name="fill object"  ref="en_doc.html#fill"/>
+
+            <keyword name="border color"  ref="en_doc.html#border"/>
+            <keyword name="border thickness"  ref="en_doc.html#border"/>
+            <keyword name="draw border"  ref="en_doc.html#border"/>
+
+            <keyword name="custom color"  ref="en_doc.html#custom_color"/>
+            <keyword name="select custom color"  ref="en_doc.html#custom_color"/>
+            <keyword name="create custom color"  ref="en_doc.html#custom_color"/>
+
+            <keyword name="key points"  ref="en_doc.html#key_points"/>
+            <keyword name="beginning"  ref="en_doc.html#key_points"/>
+            <keyword name="end"  ref="en_doc.html#key_points"/>
+            <keyword name="trajectory change"  ref="en_doc.html#key_points"/>
+
+            <keyword name="change position"  ref="en_doc.html#trajectory_change"/>
+            <keyword name="change trajectory"  ref="en_doc.html#trajectory_change"/>
+            <keyword name="set trajectory"  ref="en_doc.html#trajectory_change"/>
+            <keyword name="add trajectory change"  ref="en_doc.html#trajectory_change"/>
+
+            <keyword name="initial position"  ref="en_doc.html#initial_position"/>
+            <keyword name="change initial position"  ref="en_doc.html#initial_position"/>
+            <keyword name="change beginning"  ref="en_doc.html#initial_position"/>
+
+            <keyword name="end position"  ref="en_doc.html#end_position"/>
+            <keyword name="set last frame"  ref="en_doc.html#end_position"/>
+            <keyword name="change last frame"  ref="en_doc.html#end_position"/>
+            <keyword name="last frame"  ref="en_doc.html#end_position"/>
+
+            <keyword name="tracking till the end"  ref="en_doc.html#last_frame"/>
+            <keyword name="video end"  ref="en_doc.html#last_frame"/>
+            <keyword name="end of a video"  ref="en_doc.html#last_frame"/>
+
+            <keyword name="partial trajectory computing"  ref="en_doc.html#compute_trajectory_partial"/>
+            <keyword name="trajectory computing"  ref="en_doc.html#compute_trajectory_partial"/>
+            <keyword name="automatic trajectory computing"  ref="en_doc.html#compute_trajectory_partial"/>
+
+            <keyword name="show trajectory"  ref="en_doc.html#trajectory"/>
+            <keyword name="trajectory"  ref="en_doc.html#trajectory"/>
+            <keyword name="width"  ref="en_doc.html#trajectory"/>
+            <keyword name="height"  ref="en_doc.html#trajectory"/>
+            <keyword name="position"  ref="en_doc.html#trajectory"/>
+            <keyword name="frame"  ref="en_doc.html#trajectory"/>
+
+            <keyword name="compute trajectory"  ref="en_doc.html#compute_trajectory"/>
+            
+            <keyword name="original video"  ref="en_doc.html#original_video"/>
+            <keyword name="show original video"  ref="en_doc.html#original_video"/>
+            <keyword name="display original video"  ref="en_doc.html#original_video"/>
+
+            <keyword name="time values"  ref="en_doc.html#time_values"/>
+            <keyword name="show time values"  ref="en_doc.html#time_values"/>
+            <keyword name="display time values"  ref="en_doc.html#time_values"/>
+
+            <keyword name="frame numbers"  ref="en_doc.html#frame_numbers"/>
+            <keyword name="show frame numbers"  ref="en_doc.html#frame_numbers"/>
+            <keyword name="display frame numbers"  ref="en_doc.html#frame_numbers"/>
+
+            <keyword name="language"  ref="en_doc.html#language"/>
+            <keyword name="change language"  ref="en_doc.html#language"/>
+            <keyword name="change language"  ref="en_doc.html#language"/>
+            <keyword name="set language"  ref="en_doc.html#language"/>
+            <keyword name="jazyk"  ref="en_doc.html#language"/>
+            <keyword name="english"  ref="en_doc.html#language"/>
+            <keyword name="cestina"  ref="en_doc.html#language"/>
+        </keywords>
+        <files>
+            <file>*.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

@@ -1,0 +1,149 @@
+\hypertarget{classTrajectoryItem}{}\section{Trajectory\+Item Class Reference}
+\label{classTrajectoryItem}\index{Trajectory\+Item@{Trajectory\+Item}}
+Inheritance diagram for Trajectory\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTrajectoryItem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTrajectoryItem_aec384c56b69d666cf6f02b7c4d3fc63a}{Trajectory\+Item} (int64\+\_\+t timestamp, unsigned long time\+Position, unsigned long total\+Time, unsigned long frame\+Number, unsigned long frame\+Count, \hyperlink{structSelection}{Selection} position, Q\+Widget $\ast$parent, bool display\+Time=false)
+\item 
+\hyperlink{classTrajectoryItem_a8affd9424072ada1f3058e5021c3b54f}{$\sim$\+Trajectory\+Item} ()
+\item 
+int64\+\_\+t \hyperlink{classTrajectoryItem_aa832c4a147087c2c5c33507f9bde20dd}{get\+\_\+timestamp} () const 
+\item 
+void \hyperlink{classTrajectoryItem_aac11cf95cd7d71fb567c7b7bbecea402}{display\+\_\+time} ()
+\item 
+void \hyperlink{classTrajectoryItem_a4f2b20acbd5e0f017ffbfc92d81d526a}{display\+\_\+frame\+\_\+num} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classTrajectoryItem_ade2ba7e092a0790fe29517071f257f35}{event\+Filter} (Q\+Object $\ast$object, Q\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file trajectoryitem.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTrajectoryItem_aec384c56b69d666cf6f02b7c4d3fc63a}{}\index{Trajectory\+Item@{Trajectory\+Item}!Trajectory\+Item@{Trajectory\+Item}}
+\index{Trajectory\+Item@{Trajectory\+Item}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{Trajectory\+Item}]{\setlength{\rightskip}{0pt plus 5cm}Trajectory\+Item\+::\+Trajectory\+Item (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{timestamp, }
+\item[{unsigned long}]{time\+Position, }
+\item[{unsigned long}]{total\+Time, }
+\item[{unsigned long}]{frame\+Number, }
+\item[{unsigned long}]{frame\+Count, }
+\item[{{\bf Selection}}]{position, }
+\item[{Q\+Widget $\ast$}]{parent, }
+\item[{bool}]{display\+Time = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classTrajectoryItem_aec384c56b69d666cf6f02b7c4d3fc63a}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & Timestamp \\
+\hline
+{\em time\+Position} & Time position \\
+\hline
+{\em total\+Time} & Total video time \\
+\hline
+{\em frame\+Number} & Fram number \\
+\hline
+{\em frame\+Count} & Number of frames in the video \\
+\hline
+{\em parent} & Parent widget \\
+\hline
+{\em display\+Time} & True -\/ display time. False -\/ display frame number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file trajectoryitem.\+cpp.
+
+\hypertarget{classTrajectoryItem_a8affd9424072ada1f3058e5021c3b54f}{}\index{Trajectory\+Item@{Trajectory\+Item}!````~Trajectory\+Item@{$\sim$\+Trajectory\+Item}}
+\index{````~Trajectory\+Item@{$\sim$\+Trajectory\+Item}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{$\sim$\+Trajectory\+Item}]{\setlength{\rightskip}{0pt plus 5cm}Trajectory\+Item\+::$\sim$\+Trajectory\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrajectoryItem_a8affd9424072ada1f3058e5021c3b54f}
+Destructor 
+
+Definition at line 90 of file trajectoryitem.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTrajectoryItem_a4f2b20acbd5e0f017ffbfc92d81d526a}{}\index{Trajectory\+Item@{Trajectory\+Item}!display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}}
+\index{display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{display\+\_\+frame\+\_\+num}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+Item\+::display\+\_\+frame\+\_\+num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrajectoryItem_a4f2b20acbd5e0f017ffbfc92d81d526a}
+Displays values as frame numbers. 
+
+Definition at line 106 of file trajectoryitem.\+cpp.
+
+\hypertarget{classTrajectoryItem_aac11cf95cd7d71fb567c7b7bbecea402}{}\index{Trajectory\+Item@{Trajectory\+Item}!display\+\_\+time@{display\+\_\+time}}
+\index{display\+\_\+time@{display\+\_\+time}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{display\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+Item\+::display\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTrajectoryItem_aac11cf95cd7d71fb567c7b7bbecea402}
+Displays values as time positions. 
+
+Definition at line 100 of file trajectoryitem.\+cpp.
+
+\hypertarget{classTrajectoryItem_ade2ba7e092a0790fe29517071f257f35}{}\index{Trajectory\+Item@{Trajectory\+Item}!event\+Filter@{event\+Filter}}
+\index{event\+Filter@{event\+Filter}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{event\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+Item\+::event\+Filter (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{object, }
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classTrajectoryItem_ade2ba7e092a0790fe29517071f257f35}
+Filters Enter and Leave events for item highlighting when hovering 
+\begin{DoxyParams}{Parameters}
+{\em object} & Object of the event \\
+\hline
+{\em event} & Event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False -\/ propagate event further. True -\/ do not propagate. 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file trajectoryitem.\+cpp.
+
+\hypertarget{classTrajectoryItem_aa832c4a147087c2c5c33507f9bde20dd}{}\index{Trajectory\+Item@{Trajectory\+Item}!get\+\_\+timestamp@{get\+\_\+timestamp}}
+\index{get\+\_\+timestamp@{get\+\_\+timestamp}!Trajectory\+Item@{Trajectory\+Item}}
+\subsubsection[{get\+\_\+timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Trajectory\+Item\+::get\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classTrajectoryItem_aa832c4a147087c2c5c33507f9bde20dd}
+Returns timestamp. \begin{DoxyReturn}{Returns}
+timestamp 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file trajectoryitem.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{trajectoryitem_8h}{trajectoryitem.\+h}\item 
+sources/\hyperlink{trajectoryitem_8cpp}{trajectoryitem.\+cpp}\end{DoxyCompactItemize}

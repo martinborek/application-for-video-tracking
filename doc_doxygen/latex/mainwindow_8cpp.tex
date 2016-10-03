@@ -1,0 +1,48 @@
+\hypertarget{mainwindow_8cpp}{}\section{sources/mainwindow.cpp File Reference}
+\label{mainwindow_8cpp}\index{sources/mainwindow.\+cpp@{sources/mainwindow.\+cpp}}
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ui\+\_\+mainwindow.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}selection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}colors.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}objectshape.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cereal/archives/json.\+hpp$>$}\\*
+{\ttfamily \#include $<$cereal/archives/xml.\+hpp$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$Qt\+Gui$>$}\\*
+{\ttfamily \#include $<$Q\+Debug$>$}\\*
+{\ttfamily \#include $<$Q\+File\+Dialog$>$}\\*
+{\ttfamily \#include $<$Q\+Painter$>$}\\*
+{\ttfamily \#include $<$Q\+Progress\+Dialog$>$}\\*
+{\ttfamily \#include $<$Q\+Input\+Dialog$>$}\\*
+{\ttfamily \#include $<$Q\+Color\+Dialog$>$}\\*
+{\ttfamily \#include $<$Q\+Message\+Box$>$}\\*
+{\ttfamily \#include $<$Q\+Menu$>$}\\*
+{\ttfamily \#include $<$Q\+Translator$>$}\\*
+{\ttfamily \#include $<$Q\+Splitter$>$}\\*
+{\ttfamily \#include $<$Q\+Dock\+Widget$>$}\\*
+{\ttfamily \#include $<$helpbrowser.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{mainwindow_8cpp_a00702f6f73af9c288e50dccea018f007}{}\#define {\bfseries V\+I\+D\+E\+O\+T\+R\+A\+C\+K\+I\+N\+G\+\_\+10\+M\+S2\+S}~100\label{mainwindow_8cpp_a00702f6f73af9c288e50dccea018f007}
+
+\item 
+\hypertarget{mainwindow_8cpp_a2afbb6b3668c5bbc8d052d3b1ea3f6c3}{}\#define {\bfseries V\+I\+D\+E\+O\+T\+R\+A\+C\+K\+I\+N\+G\+\_\+\+T\+I\+M\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T}~1.\+5\label{mainwindow_8cpp_a2afbb6b3668c5bbc8d052d3b1ea3f6c3}
+
+\item 
+\hypertarget{mainwindow_8cpp_a8829f65f6815dc499c4fd89563c5954b}{}\#define {\bfseries V\+I\+D\+E\+O\+T\+R\+A\+C\+K\+I\+N\+G\+\_\+\+T\+I\+M\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+F\+A\+S\+T}~0.\+5\label{mainwindow_8cpp_a8829f65f6815dc499c4fd89563c5954b}
+
+\item 
+\hypertarget{mainwindow_8cpp_a4a34a3bdf7b84f8d9feb137faeb051d6}{}\#define {\bfseries V\+I\+D\+E\+O\+T\+R\+A\+C\+K\+I\+N\+G\+\_\+\+T\+I\+M\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+S\+L\+O\+W}~0.\+2\label{mainwindow_8cpp_a4a34a3bdf7b84f8d9feb137faeb051d6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Martin Borek (\href{mailto:mborekcz@gmail.com}{\tt mborekcz@gmail.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May, 2015 
+\end{DoxyDate}

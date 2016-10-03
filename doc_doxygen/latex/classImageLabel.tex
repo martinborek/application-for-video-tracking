@@ -1,0 +1,191 @@
+\hypertarget{classImageLabel}{}\section{Image\+Label Class Reference}
+\label{classImageLabel}\index{Image\+Label@{Image\+Label}}
+Inheritance diagram for Image\+Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classImageLabel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImageLabel_a01bf7ab77bbe3d5d3f58b1cdcccc8667}{Image\+Label} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classImageLabel_ab0caf7e09b94060541ea364e7c54d156}{$\sim$\+Image\+Label} ()
+\item 
+void \hyperlink{classImageLabel_acc4767a093d42e4e3eadf9a8ad70617f}{set\+\_\+image} (Q\+Image const \&image, int display\+Width, int display\+Height)
+\item 
+\hyperlink{structSelection}{Selection} \hyperlink{classImageLabel_ae5558dd558feade7c886a5568d24b5a3}{get\+\_\+selection} () const 
+\item 
+void \hyperlink{classImageLabel_a1bc29f51b2277bb51d706a95b04beb8b}{set\+\_\+selection\+\_\+enabled} (bool enabled)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classImageLabel_a53568d0398cc9e07d67a5cec1da98ad1}{resize\+Event} (Q\+Resize\+Event $\ast$)
+\item 
+void \hyperlink{classImageLabel_a792567ff559d8e55ab22398e7ef1206d}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{classImageLabel_a50f53cf1aa569107e8acc74137afd990}{mouse\+Release\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{classImageLabel_a3b57860e8b2778a46ef7700c20c55b64}{mouse\+Move\+Event} (Q\+Mouse\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file imagelabel.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classImageLabel_a01bf7ab77bbe3d5d3f58b1cdcccc8667}{}\index{Image\+Label@{Image\+Label}!Image\+Label@{Image\+Label}}
+\index{Image\+Label@{Image\+Label}!Image\+Label@{Image\+Label}}
+\subsubsection[{Image\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Label\+::\+Image\+Label (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classImageLabel_a01bf7ab77bbe3d5d3f58b1cdcccc8667}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_ab0caf7e09b94060541ea364e7c54d156}{}\index{Image\+Label@{Image\+Label}!````~Image\+Label@{$\sim$\+Image\+Label}}
+\index{````~Image\+Label@{$\sim$\+Image\+Label}!Image\+Label@{Image\+Label}}
+\subsubsection[{$\sim$\+Image\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Label\+::$\sim$\+Image\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classImageLabel_ab0caf7e09b94060541ea364e7c54d156}
+Destructor 
+
+Definition at line 22 of file imagelabel.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classImageLabel_ae5558dd558feade7c886a5568d24b5a3}{}\index{Image\+Label@{Image\+Label}!get\+\_\+selection@{get\+\_\+selection}}
+\index{get\+\_\+selection@{get\+\_\+selection}!Image\+Label@{Image\+Label}}
+\subsubsection[{get\+\_\+selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Image\+Label\+::get\+\_\+selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classImageLabel_ae5558dd558feade7c886a5568d24b5a3}
+Returns position of the currently selected area. \begin{DoxyReturn}{Returns}
+Selected area 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_a3b57860e8b2778a46ef7700c20c55b64}{}\index{Image\+Label@{Image\+Label}!mouse\+Move\+Event@{mouse\+Move\+Event}}
+\index{mouse\+Move\+Event@{mouse\+Move\+Event}!Image\+Label@{Image\+Label}}
+\subsubsection[{mouse\+Move\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::mouse\+Move\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classImageLabel_a3b57860e8b2778a46ef7700c20c55b64}
+Handles mouse move events over the \hyperlink{classImageLabel}{Image\+Label} area. 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+if (!is\+Selected) \{ emit selected(true); is\+Selected = true; // \hyperlink{structSelection}{Selection} is valid and can be displayed \}
+
+Definition at line 118 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_a792567ff559d8e55ab22398e7ef1206d}{}\index{Image\+Label@{Image\+Label}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Image\+Label@{Image\+Label}}
+\subsubsection[{mouse\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classImageLabel_a792567ff559d8e55ab22398e7ef1206d}
+Handles mouse press events over the \hyperlink{classImageLabel}{Image\+Label} area. 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_a50f53cf1aa569107e8acc74137afd990}{}\index{Image\+Label@{Image\+Label}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Image\+Label@{Image\+Label}}
+\subsubsection[{mouse\+Release\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::mouse\+Release\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classImageLabel_a50f53cf1aa569107e8acc74137afd990}
+Handles mouse release events over the \hyperlink{classImageLabel}{Image\+Label} area. 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+selection.\+width = event-\/$>$x() -\/ selection.\+x; selection.\+height = event-\/$>$y() -\/ selection.\+y;
+
+emit send\+\_\+position(selection);
+
+Definition at line 99 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_a53568d0398cc9e07d67a5cec1da98ad1}{}\index{Image\+Label@{Image\+Label}!resize\+Event@{resize\+Event}}
+\index{resize\+Event@{resize\+Event}!Image\+Label@{Image\+Label}}
+\subsubsection[{resize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::resize\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Resize\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classImageLabel_a53568d0398cc9e07d67a5cec1da98ad1}
+Updates the \hyperlink{classImageLabel}{Image\+Label} when the Main\+Windows is resized. 
+
+Definition at line 76 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_acc4767a093d42e4e3eadf9a8ad70617f}{}\index{Image\+Label@{Image\+Label}!set\+\_\+image@{set\+\_\+image}}
+\index{set\+\_\+image@{set\+\_\+image}!Image\+Label@{Image\+Label}}
+\subsubsection[{set\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::set\+\_\+image (
+\begin{DoxyParamCaption}
+\item[{Q\+Image const \&}]{image, }
+\item[{int}]{display\+Width, }
+\item[{int}]{display\+Height}
+\end{DoxyParamCaption}
+)}\label{classImageLabel_acc4767a093d42e4e3eadf9a8ad70617f}
+Sets new image. It ss called also when the \hyperlink{classMainWindow}{Main\+Window} is resized. 
+\begin{DoxyParams}{Parameters}
+{\em image} & Original image \\
+\hline
+{\em display\+Width} & Maximal allowed width (with respect to the current size of the window) \\
+\hline
+{\em display\+Height} & Maximal allowed height \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file imagelabel.\+cpp.
+
+\hypertarget{classImageLabel_a1bc29f51b2277bb51d706a95b04beb8b}{}\index{Image\+Label@{Image\+Label}!set\+\_\+selection\+\_\+enabled@{set\+\_\+selection\+\_\+enabled}}
+\index{set\+\_\+selection\+\_\+enabled@{set\+\_\+selection\+\_\+enabled}!Image\+Label@{Image\+Label}}
+\subsubsection[{set\+\_\+selection\+\_\+enabled}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Label\+::set\+\_\+selection\+\_\+enabled (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classImageLabel_a1bc29f51b2277bb51d706a95b04beb8b}
+Enables or disables object (area) selection. 
+\begin{DoxyParams}{Parameters}
+{\em enabled} & If true, selection is enabled. If false, selection is disabled. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 186 of file imagelabel.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{imagelabel_8h}{imagelabel.\+h}\item 
+sources/\hyperlink{imagelabel_8cpp}{imagelabel.\+cpp}\end{DoxyCompactItemize}

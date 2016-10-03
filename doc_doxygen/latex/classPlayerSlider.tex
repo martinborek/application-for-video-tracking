@@ -1,0 +1,116 @@
+\hypertarget{classPlayerSlider}{}\section{Player\+Slider Class Reference}
+\label{classPlayerSlider}\index{Player\+Slider@{Player\+Slider}}
+Inheritance diagram for Player\+Slider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlayerSlider}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPlayerSlider_abef7cf0a30593a00702809005603eaf8}{clicked} (unsigned long)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayerSlider_a84733b1398e44defe971cc1c34ea7651}{Player\+Slider} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classPlayerSlider_a02cf20dfe74926a7a1be1017e9c4e926}{$\sim$\+Player\+Slider} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPlayerSlider_a29c91c586725aee0822b966f701562c3}{mouse\+Release\+Event} (Q\+Mouse\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file playerslider.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlayerSlider_a84733b1398e44defe971cc1c34ea7651}{}\index{Player\+Slider@{Player\+Slider}!Player\+Slider@{Player\+Slider}}
+\index{Player\+Slider@{Player\+Slider}!Player\+Slider@{Player\+Slider}}
+\subsubsection[{Player\+Slider}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Slider\+::\+Player\+Slider (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classPlayerSlider_a84733b1398e44defe971cc1c34ea7651}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file playerslider.\+cpp.
+
+\hypertarget{classPlayerSlider_a02cf20dfe74926a7a1be1017e9c4e926}{}\index{Player\+Slider@{Player\+Slider}!````~Player\+Slider@{$\sim$\+Player\+Slider}}
+\index{````~Player\+Slider@{$\sim$\+Player\+Slider}!Player\+Slider@{Player\+Slider}}
+\subsubsection[{$\sim$\+Player\+Slider}]{\setlength{\rightskip}{0pt plus 5cm}Player\+Slider\+::$\sim$\+Player\+Slider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPlayerSlider_a02cf20dfe74926a7a1be1017e9c4e926}
+Destructor 
+
+Definition at line 104 of file playerslider.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlayerSlider_abef7cf0a30593a00702809005603eaf8}{}\index{Player\+Slider@{Player\+Slider}!clicked@{clicked}}
+\index{clicked@{clicked}!Player\+Slider@{Player\+Slider}}
+\subsubsection[{clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Slider\+::clicked (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{long}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{classPlayerSlider_abef7cf0a30593a00702809005603eaf8}
+When a click is detected, this signal send a position of the click. 
+\begin{DoxyParams}{Parameters}
+{\em Position} & of the slider where the click was made \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayerSlider_a29c91c586725aee0822b966f701562c3}{}\index{Player\+Slider@{Player\+Slider}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Player\+Slider@{Player\+Slider}}
+\subsubsection[{mouse\+Release\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Slider\+::mouse\+Release\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classPlayerSlider_a29c91c586725aee0822b966f701562c3}
+Captures mouse release events to detect a mouse click that is processed and clicked signal is emitted. 
+\begin{DoxyParams}{Parameters}
+{\em event} & Mouse event\\
+\hline
+\end{DoxyParams}
+void Player\+Slider\+::mouse\+Press\+Event(\+Q\+Mouse\+Event $\ast$event) \{ Q\+Slider mouse\+Press\+Event needs to be called so that signals slider\+Pressed with slider\+Moved are emitted correctly. It also sets flag Slider\+Down when the \char`\"{}controller\char`\"{} is pressed and therefore no further action is needed since the pressed position is the current one. Q\+Slider\+::mouse\+Press\+Event(event); if (is\+Slider\+Down()) return;
+
+if (event-\/$>$button() == Qt\+::\+Left\+Button) \{ \begin{DoxyVerb}int position;
+double value = 0; //0-1
+if (orientation() == Qt::Horizontal)
+    value = event->x() / static_cast<double>(width()-1);
+else // ==Qt::Vertical
+    value = event->y() / static_cast<double>(height()-1);
+\end{DoxyVerb}
+
+
+Position is more accurate when floor() is used at the beginning and ceil() at the end. if (value $<$ 0.\+3) position = floor(minimum() + (maximum()-\/minimum()) $\ast$ value); else if (value $>$ 0.\+7) position = ceil(minimum() + (maximum()-\/minimum()) $\ast$ value); else position = round(minimum() + (maximum()-\/minimum()) $\ast$ value);
+
+emit slider\+Moved(position);
+
+event-\/$>$accept(); \}
+
+\} 
+
+Definition at line 56 of file playerslider.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{playerslider_8h}{playerslider.\+h}\item 
+sources/\hyperlink{playerslider_8cpp}{playerslider.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{classTimeLabel}{}\section{Time\+Label Class Reference}
+\label{classTimeLabel}\index{Time\+Label@{Time\+Label}}
+Inheritance diagram for Time\+Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTimeLabel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTimeLabel_ab5209722b07e051d8f491cd15a16d3a6}{Time\+Label} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classTimeLabel_adf063e3753ec3518e8b2fb5ff3eed9e7}{$\sim$\+Time\+Label} ()
+\item 
+void \hyperlink{classTimeLabel_adcce5f44f60d58312c0a566b3dd0bf77}{set\+\_\+total\+\_\+time} (const unsigned long \&time)
+\item 
+void \hyperlink{classTimeLabel_a77ac5dbff384d73f672ef00dade79a54}{display\+\_\+time} (const unsigned long \&time, bool include\+Total=true)
+\item 
+void \hyperlink{classTimeLabel_a177fc7aff1b4257b947a9a174cd82362}{set\+\_\+frame\+\_\+count} (unsigned long frame\+Count)
+\item 
+void \hyperlink{classTimeLabel_ab92bd43ecd75617d5b5a187db72ed44b}{display\+\_\+frame\+\_\+num} (unsigned long frame\+Number, bool include\+Total=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file timelabel.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTimeLabel_ab5209722b07e051d8f491cd15a16d3a6}{}\index{Time\+Label@{Time\+Label}!Time\+Label@{Time\+Label}}
+\index{Time\+Label@{Time\+Label}!Time\+Label@{Time\+Label}}
+\subsubsection[{Time\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Time\+Label\+::\+Time\+Label (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classTimeLabel_ab5209722b07e051d8f491cd15a16d3a6}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file timelabel.\+cpp.
+
+\hypertarget{classTimeLabel_adf063e3753ec3518e8b2fb5ff3eed9e7}{}\index{Time\+Label@{Time\+Label}!````~Time\+Label@{$\sim$\+Time\+Label}}
+\index{````~Time\+Label@{$\sim$\+Time\+Label}!Time\+Label@{Time\+Label}}
+\subsubsection[{$\sim$\+Time\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Time\+Label\+::$\sim$\+Time\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTimeLabel_adf063e3753ec3518e8b2fb5ff3eed9e7}
+Destructor 
+
+Definition at line 42 of file timelabel.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTimeLabel_ab92bd43ecd75617d5b5a187db72ed44b}{}\index{Time\+Label@{Time\+Label}!display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}}
+\index{display\+\_\+frame\+\_\+num@{display\+\_\+frame\+\_\+num}!Time\+Label@{Time\+Label}}
+\subsubsection[{display\+\_\+frame\+\_\+num}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+Label\+::display\+\_\+frame\+\_\+num (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{frame\+Number, }
+\item[{bool}]{include\+Total = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classTimeLabel_ab92bd43ecd75617d5b5a187db72ed44b}
+Displays given frame number with the total number of frames. 
+\begin{DoxyParams}{Parameters}
+{\em frame\+Number} & Displayed frame number \\
+\hline
+{\em include\+Total} & If true, total number of frames is also displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 88 of file timelabel.\+cpp.
+
+\hypertarget{classTimeLabel_a77ac5dbff384d73f672ef00dade79a54}{}\index{Time\+Label@{Time\+Label}!display\+\_\+time@{display\+\_\+time}}
+\index{display\+\_\+time@{display\+\_\+time}!Time\+Label@{Time\+Label}}
+\subsubsection[{display\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+Label\+::display\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{const unsigned long \&}]{time, }
+\item[{bool}]{include\+Total = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classTimeLabel_a77ac5dbff384d73f672ef00dade79a54}
+Displays given time position with the total time. 
+\begin{DoxyParams}{Parameters}
+{\em time} & Displayed time \\
+\hline
+{\em include\+Total} & If true, total length is also displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file timelabel.\+cpp.
+
+\hypertarget{classTimeLabel_a177fc7aff1b4257b947a9a174cd82362}{}\index{Time\+Label@{Time\+Label}!set\+\_\+frame\+\_\+count@{set\+\_\+frame\+\_\+count}}
+\index{set\+\_\+frame\+\_\+count@{set\+\_\+frame\+\_\+count}!Time\+Label@{Time\+Label}}
+\subsubsection[{set\+\_\+frame\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+Label\+::set\+\_\+frame\+\_\+count (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{frame\+Count}
+\end{DoxyParamCaption}
+)}\label{classTimeLabel_a177fc7aff1b4257b947a9a174cd82362}
+Sets the total number of frames. 
+\begin{DoxyParams}{Parameters}
+{\em frame\+Count} & Number of frames \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file timelabel.\+cpp.
+
+\hypertarget{classTimeLabel_adcce5f44f60d58312c0a566b3dd0bf77}{}\index{Time\+Label@{Time\+Label}!set\+\_\+total\+\_\+time@{set\+\_\+total\+\_\+time}}
+\index{set\+\_\+total\+\_\+time@{set\+\_\+total\+\_\+time}!Time\+Label@{Time\+Label}}
+\subsubsection[{set\+\_\+total\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+Label\+::set\+\_\+total\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{const unsigned long \&}]{time}
+\end{DoxyParamCaption}
+)}\label{classTimeLabel_adcce5f44f60d58312c0a566b3dd0bf77}
+Sets the total video time. 
+\begin{DoxyParams}{Parameters}
+{\em time} & Time in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file timelabel.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{timelabel_8h}{timelabel.\+h}\item 
+sources/\hyperlink{timelabel_8cpp}{timelabel.\+cpp}\end{DoxyCompactItemize}

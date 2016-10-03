@@ -1,0 +1,2 @@
+D:\Qt\5.4\msvc2013_opengl\bin\qcollectiongenerator.exe C:\video_anonymizer\help\cs_helpcollection.qhcp -o C:\video_anonymizer\help\help_cs.qhc
+D:\Qt\5.4\msvc2013_opengl\bin\qcollectiongenerator.exe C:\video_anonymizer\help\en_helpcollection.qhcp -o C:\video_anonymizer\help\help_en.qhc

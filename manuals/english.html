@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Video Anonymizer</title>
+    <style type="text/css">
+    	h3 { margin-bottom: 0px; }
+    	h3 { margin-bottom: 0px; }
+    	p { margin-top: 2px; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+<h3 id="open_video">Open video<a name="open_video"></a></h3>
+<p>For opening a video, go to the main menu: <b>File -&gt; Open video</b> and find its path.
+You can use a shortcut <i>Ctrl+O</i>.</p>
+
+<h3 id="save_video">Save video<a name="save_video"></a></h3>
+<p>For saving an output video, go to the main menu: <b>File -&gt; Save output video file</b>. The output video contains all tracked objects.
+However, it is not possible to change these objects later. For saving a video, you can use a shortcut <i>Ctrl+U</i>.
+If you want to save a project for later editing, use: <a href="#save_project">Save project</a>.</p>
+
+<h3 id="open_project">Open project<a name="open_project"></a></h3>
+<p>Projects created by Video Anonymizer can be loaded in the main menu: <b>File -&gt; Load project</b>.
+Projects can be loaded in formats JSON and XML. For opening a project, shortcut <i>Ctrl+L</i> can be used.
+If you want to open a new video, use: <a href="#open_video">Open video</a>.</p>
+
+<h3 id="save_project">Save project<a name="save_project"></a></h3>
+<p>If you want to edit a project later, you can save it in JSON or XML. Such a project is later loaded with all its objects and settings.
+For saving a project, go to the main menu: <b>File -&gt; Save project</b> or use a shortcut <i>Ctrl+S</i>.
+However, saved projects are not media files. If you want to create an output video file, use: <a href="#save_video">Save video</a>.</p>
+
+<h3 id="play">Play / Pause video<a name="play"></a></h3>
+<p>For playing or pausing a video, go to the main menu: <b>Player -&gt; Play / Pause</b>.
+Alternatively, you can use a shortcut <i>Ctrl+P</i> or a button <b>Play (Pause)</b> from the video player controls located beneath the video frame.
+If you want to stop a video (go to its first frame), use: <a href="#stop">Stop video</a>.</p>
+
+<h3 id="stop">Stop video<a name="stop"></a></h3>
+<p>For stopping a video, go to the main menu: <b>Player -&gt; Stop</b>. Alternatively, you can use a shortcut <i>Ctrl+Z</i> or a button <b>Stop</b>
+located in the video player controls beneath the video frame.
+If you want to pause a video, use: <a href="#play">Play / Pause</a>.</p>
+
+<h3 id="stepping">Video stepping<a name="stepping"></a></h3>
+<p>A video can be moved forward and back by one frame.
+<h3 id="step_forward">Step forward<a name="step_forward"></a></h3>
+<p>For stepping forward, go to the main menu: <b>Player -&gt; Step forward</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Right</i> or a button "<b>&gt;</b>" located in the video player controls beneath the video frame.</p>
+<h3 id="step_back">Step back<a name="step_back"></a></h3>
+<p>For stepping back, go to the main menu: <b>Player -&gt; Step back</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Left</i> or a button "<b>&lt;</b>" located in the video player controls beneath the video frame.</p>
+
+<h3 id="speed">Change playback speed<a name="speed"></a></h3>
+The video player enables changing a playback speed. The current playback speed is displayed on the video player controls' right.
+<h3 id="faster">Faster<a name="faster"></a></h3>
+<p>For increasing the playback speed, go to the main menu: <b>Player -&gt; Speed -&gt; Play faster</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Up</i> or a button "<b>+</b>", located next to the current playback speed. </p>
+<h3 id="slower">Slower<a name="slower"></a></h3>
+<p>For decreasing the playback speed, go to the main menu: <b>Player -&gt; Speed -&gt; Play slower</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Down</i> or a button "<b>-</b>", located next to the current playback speed. </p>
+<h3 id="original_speed">Original speed<a name="original_speed"></a></h3>
+<p>For restoring the original video speed, go to the main menu: <b>Player -&gt; Speed -&gt; Original speed</b>.</p>
+
+<h3 id="track_object">Track a new object<a name="track_object"></a></h3>
+<p>To track a new object go to the main menu: <b>Object -&gt; Track object</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+A</i> or a button <b>Track object</b>, located in the video player controls beneath the video frame.
+You are asked to enter the object's name and to select the object's initial position.
+When selecting the initial position, you can use the video player to find the desired frame.
+Select an area of the object to be tracked by <a href="#selection">Object selection</a>.</p>
+
+<h3 id="selection">Object selection<a name="selection"></a></h3>
+<p>Select an area by pressing a mouse button in a video frame at a position where the object begins, move the cursor to the end of the object and release the button. If you want to change the selection, select a new area the same way as the first selection. This way the new area replaces the previous one.</p>
+
+<h3 id="rename_object">Rename an object<a name="rename_object"></a></h3>
+<p>To rename the object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Change name</b>.
+You can rename the object also in the section <b>Edit object</b> at the <b>General</b> tab by clicking on a button <b>Change name</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+N</i>.</p>
+
+<h3 id="delete_object">Delete an object<a name="delete_object"></a></h3>
+<p>To delete the object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Remove</b>.
+You can delete the object also in the section <b>Edit object</b> at the <b>General</b> tab by clicking on a button <b>Remove</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+R</i>.</p>
+
+<h3 id="appearance">Change object appearance<a name="appearance"></a></h3>
+<p>An appearance of the object selected in the section "Edit object" can be changed at the <b>Appearance</b> tab.</p>
+
+<h3 id="defocus_color">Defocus or color<a name="defocus_color"></a></h3>
+<p>For defocusing (anonymizing) a tracked object, check the option <b>Defocus</b>.
+If you want to fill the object with a color or draw a border around the object, check the option <b>Color</b>.</p>
+
+<h3 id="defocus">Defocus size<a name="defocus"></a></h3>
+<p>Defocusing can be adjusted by changing the <b>Defocus size</b>. It defines the size of squares used for defocusing. The lower the value is, the less visible (more defocused) the object is.</p>
+<h3 id="shape">Shape selection<a name="shape"></a></h3>
+<p>The item <b>Shape</b> defines the drawn shape of a tracked object. This option works only when filling the object with a color or drawing a border (not for defocusing).</p>
+
+<h3 id="fill">Fill an object<a name="fill"></a></h3>
+<p>When the option <b>Fill</b> is checked in the item <b>Draw</b>, the tracked object is filled with a color selected in <b>Color</b>.
+Beside predefined colors, you can <a href="#custom_color">Select a custom color</a>.</p>
+
+<h3 id="border">Draw a border<a name="border"></a></h3>
+<p>When the option <b>Border</b> is checked in the item <b>Draw</b>, a border is drawn around the tracked object.
+The thickness of the border is set in <b>Border thickness</b> and the color is selected in <b>Border color</b>. 
+Beside predefined colors, you can <a href="#custom_color">Select a custom color</a>.</p>
+
+<h3 id="custom_color">Select a custom color<a name="custom_color"></a></h3>
+<p>For selecting a custom color (when selecting a color for a border or for filling an object), click on the first item in the list of colors with the text <b>+ Add new</b>.</p> 
+
+<h3 id="key_points">Key points<a name="key_points"></a></h3>
+<p>The tab <b>Key points</b> in the section <b>Edit object</b> contains points (frames) with trajectory changes defined by a user.
+There are three kinds of points: <b>Beginning</b>, <b>End</b> and <b>Trajectory change</b>.
+Click on a point to change it or to see a frame where it is defined. "Trajectory change" can be deleted this way.</p>
+<ul>
+    <li><b>Beginning:</b> The initial position of a tracked object.</li>
+	<li><b>End:</b> The last frame of a tracked object.</li>
+	<li><b>Trajectory change</b>: Change of a trajectory on a particular frame. It is used for a correction of a trajectory if the computed one is incorrect.</li>
+</ul>
+
+<h3 id="trajectory_change">Change a trajectory<a name="trajectory_change"></a></h3>
+<p>To change the trajectory of the object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Trajectory -&gt; Change trajectory</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+T</i> or a button <b>Add trajectory change</b>,
+located in the section <b>Edit object</b> at the <b>Key points</b> tab.
+Selecting a new position for an object is the same as adding a new object: <a href="#selection">Object selection</a>.</p>
+
+<h3 id="initial_position">Change the initial position of tracking<a name="initial_position"></a></h3>
+<p>To change the initial position of the tracked object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Trajectory -&gt; Change beginning</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+B</i> or an option <b>Change position</b> at the item <b>Beginning</b> at the <b>Key points</b> tab in the section <b>Edit object</b>.
+Selecting a new initial position for an object is the same as adding a new object: <a href="#selection">Object selection</a>.</p>
+
+<h3 id="end_position">Set the end of tracking<a name="end_position"></a></h3>
+<p>To set (change) the end of tracking for the tracked object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Trajectory -&gt; Set end of tracking</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+E</i> or an option <b>Change last frame of tracking</b> (or <b>Change last frame of tracking</b>) at the item <b>End</b> at the <b>Key points</b> tab in the section <b>Edit object</b>.
+Find the frame by the video player controls and confirm it.</p>
+
+<h3 id="last_frame">Set tracking till the end of the video<a name="last_frame"></a></h3>
+<p>To set tracking till the end of the video for the tracked object selected in the section "Edit object" go to the main menu: <b>Object -&gt; Trajectory -&gt; Set tracking till the end of the video</b>.
+Alternatively, you can use an option <b>Set tracking till the end</b> at the item <b>End</b> at the <b>Key points</b> tab  in the section <b>Edit object</b></p>
+
+<h3 id="compute_trajectory_partial">Partial trajectory computing<a name="compute_trajectory_partial"></a></h3>
+<p>Trajectory is computed automatically when needed. This means when a frame should be displayed, the trajectory is computed only up to the point so as the position of a tracked object is known at the frame.
+If you want to compute all the trajectory for a tracked object, use: <a href="#compute_trajectory">Compute trajectory</a>.</p>
+
+<h3 id="trajectory">Show a trajectory<a name="trajectory"></a></h3>
+<p>For displaying the trajectory of an object selected in the section "Edit object", go to the <b>Trajectory</b> tab in the section <b>Edit object</b>.
+"<b>x</b>" and "<b>y</b>" are coordinates of the object for a particular frame. "<b>w</b>" represents its width and "<b>h</b>" represents its height.
+To show a particular frame click on an item.</p>
+
+<h3 id="compute_trajectory">Compute a trajectory<a name="compute_trajectory"></a></h3>
+<p>
+For computing all the trajectory of an object selected in the section "Edit object" go to: <b>Object -&gt; Trajectory -&gt; Compute trajectory</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Alt+O</i> or a button <b>Compute trajectory</b>, located in the section <b>Edit object</b> at the <b>Trajectory</b> tab.
+This way all the object's trajectory is computed and <a href="#compute_trajectory_partial">Partial trajectory computing</a> will not be used for the object.
+That makes a video playback faster and a complete list of an object's positions (trajectory) is available at the <b>Trajectory</b> tab.</p>
+
+<h3 id="original_video">Show original video<a name="original_video"></a></h3>
+<p>To display the original video next to the altered video (video with tracked objects) go to the main menu: <b>Settings -&gt; Show original video</b>.
+Alternatively, you can use a shortcut <i>Ctrl+Shift+H</i>.</p>
+
+<h3 id="time_values">Show time values<a name="time_values"></a></h3>
+<p>For displaying time values instead of frame numbers, go to the main menu: <b>Settings -&gt; Show time values</b>.
+This option changes displayed values in all the application. Alternatively, you can use a shortcut <i>Ctrl+Shift+T</i>.</p>
+
+<h3 id="frame_numbers">Show frame numbers<a name="frame_numbers"></a></h3>
+<p>For displaying frame numbers instead of their time values, go to the main menu: <b>Settings -&gt; Show frame numbers</b>.
+This option changes displayed values in all the application. Alternatively, you can use a shortcut <i>Ctrl+Shift+N</i>.</p>
+
+<h3 id="language">Change language<a name="language"></a></h3>
+<p>Application language can be changed in the main menu: <b>Language / Jazyk</b>. Language change will take effect after restarting the application.</p>
+</body>
+</html>

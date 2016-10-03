@@ -1,0 +1,156 @@
+%============================================================================
+% tento soubor pouzijte jako zaklad
+% (c) 2008 Michal Bidlo
+% E-mail: bidlom AT fit vutbr cz
+%============================================================================
+% kodovaní: iso-8859-2 (zmena prikazem iconv, recode nebo cstocs)
+%----------------------------------------------------------------------------
+% zpracování: make, make pdf, make desky, make clean
+% připomínky posílejte na e-mail: bidlom AT fit.vutbr.cz
+% vim: set syntax=tex encoding=latin2:
+%============================================================================
+%\documentclass[cover]{fitthesis} % odevzdani do wisu - odkazy, na ktere se da klikat
+%\documentclass[cover,print]{fitthesis} % pro tisk - na odkazy se neda klikat
+%\documentclass[english,print]{fitthesis} % pro tisk - na odkazy se neda klikat
+%      \documentclass[english]{fitthesis}
+% * Je-li prace psana v anglickem jazyce, je zapotrebi u tridy pouzit 
+%   parametr english nasledovne:
+\documentclass[english]{fitthesis}
+%\documentclass[english,print]{fitthesis}
+%\documentclass[english, cover]{fitthesis}
+% * Neprejete-li si vysazet na prvni strane dokumentu desky, zruste 
+%   parametr cover
+% zde zvolime kodovani, ve kterem je napsan text prace
+% "latin2" pro iso8859-2 nebo "cp1250" pro windows-1250, "utf8" pro "utf-8"
+%\usepackage{ucs}
+%\usepackage[latin2]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, IL2]{fontenc}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+
+%zde muzeme vlozit vlastni balicky
+
+%\usepackage{float}
+\usepackage{pdfpages}
+
+\usepackage[colorinlistoftodos]{todonotes}
+% personalised TODO boxes:
+\newcommand{\todoW}[1]{\todo[inline, color=green!80]{\textbf{Write:} #1}}
+\newcommand{\todoL}[1]{\todo[inline, color=cyan!80]{\textbf{Literature:} #1}}
+\newcommand{\todoR}[1]{\todo[inline, color=pink!80]{\textbf{Rewrite:} #1}}
+\newcommand{\todoP}[1]{\todo[inline, color=orange!80]{\textbf{Add picture:} #1}}
+\newcommand{\todoO}[1]{\todo[inline, color=blue!30]{\textbf{Others:} #1}}
+\newcommand{\todoF}[1]{\todo[inline, color=yellow!30]{\textbf{Reference:} #1}}
+
+% CANCEL ALL TODOS:
+%\renewcommand{\todoW}[1]{}\renewcommand{\todoL}[1]{}\renewcommand{\todoR}[1]{}\renewcommand{\todoP}[1]{}\renewcommand{\todoO}[1]{}\renewcommand{\todoF}[1]{}
+
+\newcommand{\funcName}[1]{\path{#1}}
+\newcommand{\newExpr}[1]{\emph{#1}}
+\newcommand{\keyName}[1]{\textbf{#1}}
+
+% =======================================================================
+% balíček "hyperref" vytváří klikací odkazy v pdf, pokud tedy použijeme pdflatex
+% problém je, že balíček hyperref musí být uveden jako poslední, takže nemůže
+% být v šabloně
+\ifWis
+\ifx\pdfoutput\undefined % nejedeme pod pdflatexem
+\else
+  \usepackage{color}
+  \usepackage[unicode,colorlinks,hyperindex,plainpages=false,pdftex]{hyperref}
+  %\usepackage[hidelinks]{hyperref}
+  \definecolor{links}{rgb}{0.4,0.5,0}
+  \definecolor{anchors}{rgb}{1,0,0}
+  \def\AnchorColor{anchors}
+  \def\LinkColor{links}
+  \def\pdfBorderAttrs{/Border [0 0 0] }  % bez okrajů kolem odkazů
+  \pdfcompresslevel=9
+\fi
+\fi
+
+%Informace o praci/projektu
+%---------------------------------------------------------------------------
+\projectinfo{
+  %Prace
+  project=BP,            %typ prace BP/SP/DP/DR
+  year=2015,             %rok
+  date=\today,           %datum odevzdani
+  %Nazev prace
+  title.cs={Aplikace pro sledování objektů ve videu},  %nazev prace v cestine
+  title.en={Application for Video Tracking}, %nazev prace v anglictine
+  %Autor
+  author={Martin Borek},   %jmeno prijmeni autora
+  %author.title.p=Bc., %titul pred jmenem (nepovinne)
+  %author.title.a=PhD, %titul za jmenem (nepovinne)
+  %Ustav
+  department=UITS, % doplnte prislusnou zkratku: UPSY/UIFS/UITS/UPGM
+  %Skolitel
+  supervisor= Filip Orság, %jmeno prijmeni skolitele
+  supervisor.title.p=Ing.,   %titul pred jmenem (nepovinne)
+  supervisor.title.a={Ph.D.},    %titul za jmenem (nepovinne)
+  %Klicova slova, abstrakty, prohlaseni a podekovani je mozne definovat 
+  %bud pomoci nasledujicich parametru nebo pomoci vyhrazenych maker (viz dale)
+  %===========================================================================
+  %Klicova slova
+  keywords.cs={Video Anonymizer, anonymizace, sledování objektů ve videu, úprava videa, sledování částic, QT, FFmpeg}, %klicova slova v ceskem jazyce
+  keywords.en={Video Anonymizer, anonymization, video tracking, video editing, QT, FFmpeg, particle tracking}, %klicova slova v anglickem jazyce
+  %Abstract
+  abstract.cs={Předložená bakalářská práce pojednává o implementaci aplikace Video Anonymizer. Tato aplikace sleduje objekty ve videu a upravuje jejich vzhled. Práce se zabývá \mbox{zpracováním} videa s použitím knihovny FFmpeg, kde se zaměřuje především na vyhledávání snímků. Soustřeďuje se také na sledování více objektů, úpravu jejich trajektorií a na jejich anonymizaci; upřednostňovaný způsob anonymizace je rozmazání objektu. Dále je zde rozebráno vytváření vícejazyčného uživatelsky přívětivého grafického uživatelského rozhraní s pomocí knihovny QT. Při testování uživatelské přívětivosti tohoto grafického uživatelského rozhraní bylo zjištěno, že aplikace je snadno ovladatelná již při jejím prvním použití. Také bylo ověřeno, že uživatelská nápověda obsahuje všechny potřebné informace a je snadno dostupná přímo z aplikace.}, % abstrakt v ceskem jazyce
+  abstract.en={This thesis focuses on an implementation of an application Video Anonymizer. The application tracks objects in a video and changes their appearance. The thesis deals with processing videos when using the FFmpeg library. It covers especially issues of frames seeking. It also covers tracking multiple objects, manually correcting their trajectories and anonymizing them. The preferred way of anonymization is defocusing objects. Furthermore, the thesis describes creating a multilingual user-friendly graphical user interface with the QT framework. A usability testing was performed and revealed that the graphical user interface is easy to use even when used for the first time. Besides, it proved that a user's guide is comprehensive and easily accessible right in the application.}, % abstrakt v anglickem jazyce
+  %Prohlaseni
+  declaration={Prohlašuji, že jsem tuto bakalářskou práci vypracoval samostatně pod vedením pana Ing. Filipa Orsága, Ph.D.},
+  %Podekovani (nepovinne)
+  acknowledgment={Na tomto místě bych rád poděkoval vedoucímu mé práce panu Ing. Filipu Orságovi, Ph.D. za zajímavé téma, trpělivost a věnovaný čas. Také bych chtěl velmi poděkovat rodičům, celé mé rodině i přátelům za podporu během studia i psaní této práce.} % nepovinne
+}
+
+%Abstrakt (cesky, anglicky)
+%\abstract[cs]{Do tohoto odstavce bude zapsán výtah (abstrakt) práce v českém jazyce.}
+%\abstract[en]{Do tohoto odstavce bude zapsán výtah (abstrakt) práce v anglickém jazyce.}
+
+%Klicova slova (cesky, anglicky)
+%\keywords[cs]{Sem budou zapsána jednotlivá klíčová slova v českém jazyce, oddělená čárkami.}
+%\keywords[en]{Sem budou zapsána jednotlivá klíčová slova v anglickém jazyce, oddělená čárkami.}
+
+%Prohlaseni
+%\declaration{Prohlašuji, že jsem tuto bakalářskou práci vypracoval samostatně pod vedením pana X...
+%Další informace mi poskytli...
+%Uvedl jsem všechny literární prameny a publikace, ze kterých jsem čerpal.}
+
+%Podekovani (nepovinne)
+%\acknowledgment{V této sekci je možno uvést poděkování vedoucímu práce a těm, kteří poskytli odbornou pomoc
+%(externí zadavatel, konzultant, apod.).}
+
+
+\begin{document}
+  % Vysazeni titulnich stran
+  % ----------------------------------------------
+  \maketitle
+  % Obsah
+  % ----------------------------------------------
+  \tableofcontents
+  
+  % Seznam obrazku a tabulek (pokud prace obsahuje velke mnozstvi obrazku, tak se to hodi)
+   \listoffigures
+  % \listoftables 
+
+  % Text prace
+  % ----------------------------------------------
+  \input{obsah} % viz. obsah.tex
+
+  % Pouzita literatura
+  % ----------------------------------------------
+%\ifczech
+%  \bibliographystyle{czechiso}
+%\else 
+%  \bibliographystyle{plain}
+  \bibliographystyle{unsrt}
+%  \bibliographystyle{alpha}
+%\fi
+  \begin{flushleft}
+  \bibliography{literatura} % viz. literatura.bib
+  \end{flushleft}
+  \appendix
+  
+  \input{prilohy} % viz. prilohy.tex
+\end{document}
