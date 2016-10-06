@@ -1,4 +1,4 @@
-# application-for-video-tracking
+# Video Anonymizer - Application for video tracking
 Video Anonymizer; the application tracks objects in a video and changes their appearance.
 The application was developed as a degree project at Brno University of Technology in 2015.
 
