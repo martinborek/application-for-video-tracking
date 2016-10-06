@@ -4,4 +4,6 @@ The application was developed as a degree project at Brno University of Technolo
 
 It was developed for project "Tools and Methods for Video and Image Processing for the Fight against Terrorism".
 
+Application implemented using C++, Qt, OpenCV and FFmpeg.
+
 Author: Martin Borek
